@@ -1,0 +1,393 @@
+[
+    {
+        "name": "composer/installers",
+        "version": "v1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/installers.git",
+            "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+            "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0"
+        },
+        "replace": {
+            "roundcube/plugin-installer": "*",
+            "shama/baton": "*"
+        },
+        "require-dev": {
+            "composer/composer": "1.0.*@dev",
+            "phpunit/phpunit": "^4.8.36"
+        },
+        "time": "2018-08-27T06:10:37+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Composer\\Installers\\Plugin",
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\Installers\\": "src/Composer/Installers"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kyle Robinson Young",
+                "email": "kyle@dontkry.com",
+                "homepage": "https://github.com/shama"
+            }
+        ],
+        "description": "A multi-framework Composer library installer",
+        "homepage": "https://composer.github.io/installers/",
+        "keywords": [
+            "Craft",
+            "Dolibarr",
+            "Eliasis",
+            "Hurad",
+            "ImageCMS",
+            "Kanboard",
+            "Lan Management System",
+            "MODX Evo",
+            "Mautic",
+            "Maya",
+            "OXID",
+            "Plentymarkets",
+            "Porto",
+            "RadPHP",
+            "SMF",
+            "Thelia",
+            "WolfCMS",
+            "agl",
+            "aimeos",
+            "annotatecms",
+            "attogram",
+            "bitrix",
+            "cakephp",
+            "chef",
+            "cockpit",
+            "codeigniter",
+            "concrete5",
+            "croogo",
+            "dokuwiki",
+            "drupal",
+            "eZ Platform",
+            "elgg",
+            "expressionengine",
+            "fuelphp",
+            "grav",
+            "installer",
+            "itop",
+            "joomla",
+            "kohana",
+            "laravel",
+            "lavalite",
+            "lithium",
+            "magento",
+            "majima",
+            "mako",
+            "mediawiki",
+            "modulework",
+            "modx",
+            "moodle",
+            "osclass",
+            "phpbb",
+            "piwik",
+            "ppi",
+            "puppet",
+            "pxcms",
+            "reindex",
+            "roundcube",
+            "shopware",
+            "silverstripe",
+            "sydes",
+            "symfony",
+            "typo3",
+            "wordpress",
+            "yawik",
+            "zend",
+            "zikula"
+        ]
+    },
+    {
+        "name": "ceeram/clear_cache",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ceeram/clear_cache.git",
+            "reference": "25f8e6e4dee0175a536b29138d5255604644f7d0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ceeram/clear_cache/zipball/25f8e6e4dee0175a536b29138d5255604644f7d0",
+            "reference": "25f8e6e4dee0175a536b29138d5255604644f7d0",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2014-11-19T08:36:13+00:00",
+        "type": "cakephp-plugin",
+        "extra": {
+            "installer-name": "ClearCache"
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Clear CakePHP caches from shell, app or debug_kit panel",
+        "homepage": "http://github.com/ceeram/clear_cache"
+    },
+    {
+        "name": "cakephp/debug_kit",
+        "version": "2.2.9",
+        "version_normalized": "2.2.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cakephp/debug_kit.git",
+            "reference": "8649a612001fa1caee82d9c432b8223cef221104"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/8649a612001fa1caee82d9c432b8223cef221104",
+            "reference": "8649a612001fa1caee82d9c432b8223cef221104",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "^1.0.0",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "cakephp/cakephp-codesniffer": "^1.0.0"
+        },
+        "time": "2018-09-18T01:48:48+00:00",
+        "type": "cakephp-plugin",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.2.x-dev"
+            },
+            "installer-name": "DebugKit"
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mark Story",
+                "homepage": "http://mark-story.com",
+                "role": "Author"
+            },
+            {
+                "name": "CakePHP Community",
+                "homepage": "https://github.com/cakephp/debug_kit/graphs/contributors"
+            }
+        ],
+        "description": "CakePHP Debug Kit",
+        "homepage": "https://github.com/cakephp/debug_kit",
+        "keywords": [
+            "cakephp",
+            "debug",
+            "kit"
+        ]
+    },
+    {
+        "name": "almasaeed2010/adminlte",
+        "version": "v2.4.3",
+        "version_normalized": "2.4.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/almasaeed2010/AdminLTE.git",
+            "reference": "b3acb63ac56b13eb45b36e628b384a9a2507b50e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/b3acb63ac56b13eb45b36e628b384a9a2507b50e",
+            "reference": "b3acb63ac56b13eb45b36e628b384a9a2507b50e",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "1.*"
+        },
+        "time": "2018-02-04T12:54:57+00:00",
+        "type": "template",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Abdullah Almsaeed",
+                "email": "abdullah@almsaeedstudio.com"
+            }
+        ],
+        "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 3",
+        "homepage": "https://adminlte.io/",
+        "keywords": [
+            "JS",
+            "admin",
+            "back-end",
+            "css",
+            "less",
+            "responsive",
+            "template",
+            "theme",
+            "web"
+        ]
+    },
+    {
+        "name": "paulredmond/chosen-cakephp",
+        "version": "2.2.0",
+        "version_normalized": "2.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/paulredmond/chosen-cakephp.git",
+            "reference": "f45db03fb174a1bf5429c3c15dd51813923b75e0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/paulredmond/chosen-cakephp/zipball/f45db03fb174a1bf5429c3c15dd51813923b75e0",
+            "reference": "f45db03fb174a1bf5429c3c15dd51813923b75e0",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "1.*",
+            "php": ">=5.2.6"
+        },
+        "time": "2015-01-09T05:36:04+00:00",
+        "type": "cakephp-plugin",
+        "extra": {
+            "installer-name": "Chosen",
+            "branch-alias": {
+                "dev-master": "2.2.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Paul Redmond",
+                "email": "paulrredmond@gmail.com"
+            },
+            {
+                "name": "Harvest HQ",
+                "homepage": "http://harvesthq.github.com/chosen"
+            },
+            {
+                "name": "Github Contributors",
+                "homepage": "https://github.com/paulredmond/chosen-cakephp/graphs/contributors"
+            }
+        ],
+        "description": "Chosen CakePHP plugin for CakePHP 2",
+        "homepage": "https://github.com/paulredmond/chosen-cakephp",
+        "keywords": [
+            "cakephp",
+            "plugin"
+        ]
+    },
+    {
+        "name": "houseoftech/cakephp-meta",
+        "version": "3.0.0",
+        "version_normalized": "3.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/houseoftech/cakephp-meta.git",
+            "reference": "d5fd24aca0654beb769a9684ebc043077970908e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/houseoftech/cakephp-meta/zipball/d5fd24aca0654beb769a9684ebc043077970908e",
+            "reference": "d5fd24aca0654beb769a9684ebc043077970908e",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "*",
+            "php": ">=5.3"
+        },
+        "time": "2017-01-06T19:40:56+00:00",
+        "type": "cakephp-plugin",
+        "extra": {
+            "installer-name": "Meta"
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "SEO Plugin for CakePHP 2.x which manages title, meta description, and meta keywords for each page in your application.",
+        "homepage": "http://github.com/houseoftech/cakephp-meta",
+        "keywords": [
+            "cakephp",
+            "meta",
+            "plugin"
+        ]
+    },
+    {
+        "name": "cakephp/cakephp",
+        "version": "2.10.16",
+        "version_normalized": "2.10.16.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cakephp/cakephp.git",
+            "reference": "c4a51509c554a0762e8b4d9b3985fe042b445fe7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cakephp/cakephp/zipball/c4a51509c554a0762e8b4d9b3985fe042b445fe7",
+            "reference": "c4a51509c554a0762e8b4d9b3985fe042b445fe7",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "cakephp/cakephp-codesniffer": "^1.0.0",
+            "phpunit/phpunit": "^3.7"
+        },
+        "suggest": {
+            "ext-mcrypt": "You need to install ext-openssl or ext-mcrypt to use AES-256 encryption",
+            "ext-openssl": "You need to install ext-openssl or ext-mcrypt to use AES-256 encryption"
+        },
+        "time": "2019-03-01T02:45:41+00:00",
+        "bin": [
+            "lib/Cake/Console/cake"
+        ],
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "CakePHP Community",
+                "homepage": "https://github.com/cakephp/cakephp/graphs/contributors"
+            }
+        ],
+        "description": "The CakePHP framework",
+        "homepage": "https://cakephp.org",
+        "keywords": [
+            "framework"
+        ]
+    }
+]

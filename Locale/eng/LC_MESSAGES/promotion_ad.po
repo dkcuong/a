@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_US\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+
+msgid "item_title"
+msgstr "Promotion Ad"
+
+msgid "add_item"
+msgstr "Create Promotion Ad"
+
+msgid "edit_item"
+msgstr "Edit Promotion Ad"
+
+msgid "link"
+msgstr "Link"
+
+msgid "display"
+msgstr "Display"
+
+msgid "description"
+msgstr "Description"

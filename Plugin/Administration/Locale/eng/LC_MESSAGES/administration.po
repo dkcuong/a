@@ -1,0 +1,172 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_HK\n"
+"X-Generator: Poedit 2.2.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "last_logged_in"
+msgstr "Last logged in"
+
+msgid "email"
+msgstr "Email"
+
+msgid "phone"
+msgstr "Phone"
+
+msgid "id"
+msgstr "Id"
+
+msgid "name"
+msgstr "Name"
+
+msgid "model"
+msgstr "Model"
+
+msgid "p_model"
+msgstr "p_model"
+
+msgid "p_controller"
+msgstr "p_controller"
+
+msgid "p_delete"
+msgstr "p_delete"
+
+msgid "p_edit"
+msgstr "p_edit"
+
+msgid "p_add"
+msgstr "p_add"
+
+msgid "p_view"
+msgstr "p_view"
+
+msgid "p_index"
+msgstr "p_index"
+
+msgid "p_bits"
+msgstr "p_bits"
+
+msgid "action"
+msgstr "Action"
+
+msgid "roles"
+msgstr "Roles"
+
+msgid "role"
+msgstr "Role"
+
+msgid "password"
+msgstr "Password"
+
+msgid "brand"
+msgstr "Brand"
+
+msgid "company"
+msgstr "Company"
+
+msgid "slug"
+msgstr "Slug"
+
+msgid "empty_for_unchange"
+msgstr "Empty for unchange"
+
+msgid "administrator"
+msgstr "Administrator"
+
+msgid "permission"
+msgstr "Permission"
+
+msgid "administrators"
+msgstr "Administrators"
+
+msgid "permissions"
+msgstr "Permissions"
+
+msgid "add_administrator"
+msgstr "Add administrator"
+
+msgid "add_permission"
+msgstr "Add permission"
+
+msgid "add_full_permission"
+msgstr "Add full permission"
+
+msgid "add_role"
+msgstr "Add role"
+
+msgid "edit_administrator"
+msgstr "Edit administrator"
+
+msgid "edit_permission"
+msgstr "Edit permission"
+
+msgid "edit_role"
+msgstr "Edit role"
+
+msgid "not_enough_permission"
+msgstr "Not enough permission"
+
+msgid "user_is_logged_out"
+msgstr "User is logged out"
+
+msgid "logout_error"
+msgstr "Logout error"
+
+msgid "please_select_role"
+msgstr "Please select role"
+
+msgid "login_fail"
+msgstr "Login fail"
+
+msgid "login_success"
+msgstr "Login success"
+
+msgid "update_last_login_time_fail"
+msgstr "Update last login time fail"
+
+msgid "update_last_login_time_success"
+msgstr "Update last login time success"
+
+msgid "get_role_fail"
+msgstr "Get role fail"
+
+msgid "get_role_success"
+msgstr "Get role success"
+
+msgid "permission_exist"
+msgstr "Permission is exist"
+
+msgid "manage_role"
+msgstr "Manage Role"
+
+msgid "email_not_exist"
+msgstr "Email is not exist"
+
+msgid "forgot_password_success"
+msgstr "Forgot password success. Please check your email to get link change password. Thank you"
+
+msgid "forgot_password_failed"
+msgstr "Forgot password failed"
+
+msgid "confirm_password_is_not_match"
+msgstr "Confirm password is not match"
+
+msgid "email_not_exist"
+msgstr "Email is not exist"
+
+msgid "forgot_password_success"
+msgstr "Forgot password successfull"
+
+msgid "forgot_password_failed"
+msgstr "Forgot password failed"
+
+msgid "confirm_password"
+msgstr "Confirm password"

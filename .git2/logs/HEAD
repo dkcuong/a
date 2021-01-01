@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 d67ad88b09586e543de51fc455d16c6ffcff426e Danh Kien Cuong <danhkiencuong@gmail.com> 1609460003 +0700	clone: from git@gitlab.com:vtl-solutions/acx-cinema/pos.git
+d67ad88b09586e543de51fc455d16c6ffcff426e d67ad88b09586e543de51fc455d16c6ffcff426e Danh Kien Cuong <danhkiencuong@gmail.com> 1609460019 +0700	checkout: moving from develop to test
+d67ad88b09586e543de51fc455d16c6ffcff426e 07d53b4efef07541a213dd9e4ba7d6da896de656 Danh Kien Cuong <danhkiencuong@gmail.com> 1609460230 +0700	commit: First Commit
+07d53b4efef07541a213dd9e4ba7d6da896de656 7ad24b86884538aebe8af5adf7c097dff2c5cd57 Danh Kien Cuong <danhkiencuong@gmail.com> 1609460972 +0700	commit: Update AppController.php

@@ -1,0 +1,103 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_US\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "item_title"
+msgstr "Member"
+
+msgid "add_item"
+msgstr "Create Member"
+
+msgid "edit_item"
+msgstr "Edit Member"
+
+msgid "phone"
+msgstr "Member's Phone"
+
+msgid "renewal_item"
+msgstr "Membership Renewal"
+
+msgid "add_renewal"
+msgstr "Add Membership Renewal"
+
+msgid "edit_renewal"
+msgstr "Edit Membership Renewal"
+
+msgid "import_renewal"
+msgstr "Import Membership Renewals"
+
+msgid "renewal_date"
+msgstr "Renewal Date"
+
+msgid "expired_date"
+msgstr "Expiry Date"
+
+msgid "push_method"
+msgstr "Push Method"
+
+msgid "notice_item"
+msgstr "Notification"
+
+msgid "add_notice"
+msgstr "Add Notification"
+
+msgid "edit_notice"
+msgstr "Edit Notification"
+
+msgid "import_notice"
+msgstr "Import Notifications"
+
+msgid "month_of_birth"
+msgstr "Birth Month"
+
+msgid "country_code"
+msgstr "Country Code"
+
+msgid "contact_request_item"
+msgstr "Contact Request"
+
+msgid "log_id"
+msgstr "Log Id"
+
+msgid "payment_type"
+msgstr "Payment Type"
+
+msgid "inv_number"
+msgstr "Invoice Number"
+
+msgid "history_payment"
+msgstr "History Payment"
+
+msgid "phone_verified"
+msgstr "Verified Phone"
+
+msgid "email_verified"
+msgstr "Verified Email"
+
+msgid "view_qr_code"
+msgstr "View QR Code"
+
+msgid "renewal_status"
+msgstr "Renewal"
+
+msgid "paid"
+msgstr "Paid"
+
+msgid "not_paid"
+msgstr "Not Paid"
+
+msgid "phone_verification"
+msgstr "Phone Verification"
+
+msgid "email_verification"
+msgstr "Email Verification"

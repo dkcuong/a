@@ -1,0 +1,1170 @@
+{
+	"info": {
+		"_postman_id": "0e78490d-08fb-4454-9325-908a82fa3dca",
+		"name": "1POS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Member",
+			"item": [
+				{
+					"name": "Request Verification Code",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "0983089975",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+84",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "kevin.cuong@vtl-vtl.com",
+									"type": "text"
+								},
+								{
+									"key": "is_email",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "is_phone",
+									"value": "",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/member/members/request_verification_code.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"member",
+								"members",
+								"request_verification_code.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Verification Code",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "0983089975",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+84",
+									"type": "text"
+								},
+								{
+									"key": "verification_code",
+									"value": "4375",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "kevin.cuong@vtl-vtl.com",
+									"type": "text"
+								},
+								{
+									"key": "is_email",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "is_phone",
+									"value": "",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/member/members/check_verification_code.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"member",
+								"members",
+								"check_verification_code.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Pass",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "country_code",
+									"value": "+84",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0983089975",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "kevin.cuong@vtl-vtl.com",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "is_phone",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "is_email",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/member/members/forgot_password.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"member",
+								"members",
+								"forgot_password.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign Up - Check new member - Send verification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "kevin.cuong@vtl-vtl.com",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+84",
+									"description": "*",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0983089975",
+									"description": "*",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/member/members/check_new_member_and_send_verification_code.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"member",
+								"members",
+								"check_new_member_and_send_verification_code.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "mr",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "cuong",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "kevin.cuong@vtl-vtl.com",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+84",
+									"description": "*",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "09830899752",
+									"description": "*",
+									"type": "text"
+								},
+								{
+									"key": "age_group_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "birth_month",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "verification_code",
+									"value": "5156",
+									"description": "*",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "aos",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "cPW4Qt0-6EXNnWOQ6DRZoq:APA91bE6yYzRq_aBkza-Sw3cbJLSih5PCFD2OPfgVFlzv6q5KhHFnCaeAYyYqTbsTlQnT2_t2W4mM6NiZEnGoVcb83lOHlRrz3Q0q9R76JzNvalydFQvh1Xj3PvA4qgqyxvuO6vQPRNt",
+									"type": "text"
+								},
+								{
+									"key": "model_code",
+									"value": "Samsung Galaxy S3",
+									"type": "text"
+								},
+								{
+									"key": "os_version",
+									"value": "JellyBean",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "cuong",
+									"description": "*",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "age",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "danh",
+									"description": "*",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/member/members/signup.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"member",
+								"members",
+								"signup.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In Member",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "0983089975",
+									"description": "*\n*Nanny A: 0908070605\nDriver A: 0908070690",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "kevin.cuong@vtl-vtl.com",
+									"description": "*",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"description": "*\n2927e / driver => 7ef53 \nNanny A: 1234567890\nDriver A: 1234567890",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "eng",
+									"description": "*",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "ios",
+									"description": "*",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "999cPW4Qt0-6EXNnWOQ6DRZoq:APA91bE6yYzRq_aBkza-Sw3cbJLSih5PCFD2OPfgVFlzv6q5KhHFnCaeAYyYqTbsTlQnT2_t2W4mM6NiZEnGoVcb83lOHlRrz3Q0q9R76JzNvalydFQvh1Xj3PvA4qgqyxvuO6vQPRNt",
+									"description": "*",
+									"type": "text"
+								},
+								{
+									"key": "model_code",
+									"value": "iphone X",
+									"description": "*",
+									"type": "text"
+								},
+								{
+									"key": "os_version",
+									"value": "iOS10",
+									"description": "*",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/member/members/login.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"member",
+								"members",
+								"login.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In Staff",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "staff1",
+									"description": "*",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"description": "*\n2927e / driver => 7ef53 \nNanny A: 1234567890\nDriver A: 1234567890",
+									"type": "text"
+								},
+								{
+									"key": "model_code",
+									"value": "coc coc",
+									"description": "*",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/cinema/staffs/login.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"cinema",
+								"staffs",
+								"login.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign Out",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "CFEDB80F-0EF7-5A07-6BAE-2BDA71D4D2B1",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "cPW4Qt0-6EXNnWOQ6DRZoq:APA91bE6yYzRq_aBkza-Sw3cbJLSih5PCFD2OPfgVFlzv6q5KhHFnCaeAYyYqTbsTlQnT2_t2W4mM6NiZEnGoVcb83lOHlRrz3Q0q9R76JzNvalydFQvh1Xj3PvA4qgqyxvuO6vQPRNt",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/member/members/logout.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"member",
+								"members",
+								"logout.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List Age Group",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/member/age_groups/get_list.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"member",
+								"age_groups",
+								"get_list.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List Gender",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/member/genders/get_list.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"member",
+								"genders",
+								"get_list.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List Payment Method",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "D90C8C76-E735-CA3C-FB38-992B73F87DDC",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "eng",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "34324",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/member/payment_methods/get_list.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"member",
+								"payment_methods",
+								"get_list.json"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Home",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "IN Progress",
+			"item": [
+				{
+					"name": "Get Schedule Detail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "11A8343D05-45A5-8277-DFDF-90E6EF22B38B",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "eng",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "34324",
+									"type": "text"
+								},
+								{
+									"key": "is_latest",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "movies_movie_type_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/movie/schedules/get_schedule_detail.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"movie",
+								"schedules",
+								"get_schedule_detail.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Movie Detail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "11A8343D05-45A5-8277-DFDF-90E6EF22B38B",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "eng",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "34324",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "movie_type_id",
+									"value": "21",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/movie/movies/get_detail.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"movie",
+								"movies",
+								"get_detail.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "country_code",
+									"value": "+84",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0983089975",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "cuong 2",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "danh",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "age_group_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "birth_month",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "kevin.cuong@vtl-vtl.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "A8343D05-45A5-8277-DFDF-90E6EF22B38B",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "aos",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "cPW4Qt0-6EXNnWOQ6DRZoq:APA91bE6yYzRq_aBkza-Sw3cbJLSih5PCFD2OPfgVFlzv6q5KhHFnCaeAYyYqTbsTlQnT2_t2W4mM6NiZEnGoVcb83lOHlRrz3Q0q9R76JzNvalydFQvh1Xj3PvA4qgqyxvuO6vQPRNt",
+									"type": "text"
+								},
+								{
+									"key": "model_code",
+									"value": "Samsung Galaxy S3",
+									"type": "text"
+								},
+								{
+									"key": "os_version",
+									"value": "JellyBean",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/member/members/update_profile.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"member",
+								"members",
+								"update_profile.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Account",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language",
+									"value": "eng",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "A8343D05-45A5-8277-DFDF-90E6EF22B38B",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/member/members/get_account.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"member",
+								"members",
+								"get_account.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "A8343D05-45A5-8277-DFDF-90E6EF22B38B",
+									"description": "*",
+									"type": "text"
+								},
+								{
+									"key": "old_password",
+									"value": "1234568",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "1234569",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/member/members/change_password.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"member",
+								"members",
+								"change_password.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Schedule Detail Layout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "11A8343D05-45A5-8277-DFDF-90E6EF22B38B",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "language",
+									"value": "eng",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "34324",
+									"type": "text"
+								},
+								{
+									"key": "schedule_detail_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/movie/schedules/get_schedule_detail_layout.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"movie",
+								"schedules",
+								"get_schedule_detail_layout.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Schedule",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "11A8343D05-45A5-8277-DFDF-90E6EF22B38B",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "zho",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "34324",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/movie/schedules/get_schedule.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"movie",
+								"schedules",
+								"get_schedule.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Movie List",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "11A8343D05-45A5-8277-DFDF-90E6EF22B38B",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "eng",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "34324",
+									"type": "text"
+								},
+								{
+									"key": "is_latest",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host_pos}}/api/movie/movies/get_list.json",
+							"host": [
+								"{{host_pos}}"
+							],
+							"path": [
+								"api",
+								"movie",
+								"movies",
+								"get_list.json"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "bc410b13-4a80-48bf-9e7a-78a84e88e601",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "fd24d6a5-d0af-472a-90cd-bc1af7dfec0d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

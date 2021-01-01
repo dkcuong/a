@@ -1,0 +1,119 @@
+.pull-to-bottom{
+    display: flex;
+    align-items: flex-end;
+}
+
+.seat-layout.panel-seat-layout{
+    background-color: rgba(0, 0, 0);
+}
+
+.panel-seat-layout .row-title{
+    color: #ffffff;
+}
+
+.seat-layout{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(238, 238, 238);
+}
+
+.row-title{
+    width: 15px;
+    margin-right: 30px;
+}
+
+.row-seat{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-seat{
+    width: 20px;
+    height: 20px;
+    margin-left: 1px;
+    margin-bottom: 2px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border: 0;
+    background-color: #000000;
+}
+
+.div-seat:focus{
+    outline: none;
+}
+
+.div-seat.enabled{
+    background-color: #1AB918;
+}
+
+.div-seat.enabled.vegetable{
+    background-color: blue;
+}
+
+.div-seat.enabled.blocked{
+    background-color: yellow;
+}
+
+.div-seat.reserved{
+    background-color: red;
+}
+
+.div-seat.sold{
+    background-color: rgb(128,128,128);
+}
+
+.custom-button-top-right{
+    position: absolute;
+    right: 20px;
+}
+
+.div-container{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(105,105,105,0.2);
+    background-color: rgba(238, 238, 238);
+}
+
+.div-detail{
+    margin-bottom: 15px;
+}
+
+.div-legend{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-legend .div-item{
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-legend .div-item div{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.div-legend .div-item.available div{
+    background-color: #1AB918;
+}
+
+.div-legend .div-item.reserved div{
+    background-color: red;
+}
+
+.div-legend .div-item.sold div{
+    background-color: rgb(128,128,128);
+}
+
+#ReportAdminGenerateHkboReportForm .btn{
+    margin-left: 20px;
+}

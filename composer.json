@@ -1,0 +1,44 @@
+{
+	"name": "cakephp/app",
+	"description": "CakePHP Application skeleton",
+	"type": "library",
+	"keywords": ["application", "cakephp"],
+	"homepage": "http://cakephp.org",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "CakePHP Community",
+			"homepage": "https://github.com/cakephp/cakephp/graphs/contributors"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/cakephp/cakephp/issues",
+		"forum": "http://stackoverflow.com/tags/cakephp",
+		"irc": "irc://irc.freenode.org/cakephp",
+		"source": "https://github.com/cakephp/cakephp"
+	},
+	"require": {
+		"php": ">=5.3.0",
+		"cakephp/cakephp": "^2.9",
+		"ceeram/clear_cache": "^1.1",
+		"almasaeed2010/adminlte": "~2.0"
+	},
+	"require-dev": {
+		"cakephp/debug_kit": "^2.2.0"
+	},
+	"bin": [
+		"lib/Cake/Console/cake"
+	],
+	"config": {
+		"vendor-dir": "Vendor/"
+	},
+	"extra": {
+		"installer-paths": {
+			"Plugin/DebugKit": ["cakephp/debug_kit"],
+			"Plugin/ClearCache": ["ceeram/clear_cache"]
+		}
+	},
+	"suggest": {
+		"cakephp/cakephp-codesniffer": "Easily check code formatting against the CakePHP coding standards."
+	}
+}

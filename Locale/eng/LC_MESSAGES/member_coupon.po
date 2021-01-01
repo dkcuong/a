@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_US\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "item_title"
+msgstr "Member - Coupon"
+
+msgid "obtained_date"
+msgstr "Date Obtained"
+
+msgid "code_path"
+msgstr "Code Path"
+
+msgid "qrcode_path"
+msgstr "QR Code Path"
+
+msgid "edit_item"
+msgstr "Edit Member - Coupon"
+

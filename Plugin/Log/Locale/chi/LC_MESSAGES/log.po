@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"X-Generator: Poedit 2.2.3\n"
+
+msgid "log"
+msgstr "日志"
+
+msgid "start_period"
+msgstr "开始期间"
+
+msgid "end_period"
+msgstr "结束时期"
+
+msgid "period"
+msgstr "期"
+
+msgid "log_type"
+msgstr "日志类型"
+
+msgid "add_log_type"
+msgstr "添加日志类型"
+
+msgid "plugin"
+msgstr "插入"
+
+msgid "controller"
+msgstr "调节器"
+
+msgid "model"
+msgstr "模型"
+
+msgid "action"
+msgstr "行动"
+
+msgid "add_all_actions"
+msgstr "添加所有操作"
+
+msgid "prefix_slug"
+msgstr "前缀slug"
+
+msgid "remote_ip"
+msgstr "远程IP"
+
+msgid "agent"
+msgstr "代理人"
+
+msgid "browser"
+msgstr "浏览器"
+
+msgid "platform"
+msgstr "平台"
+
+msgid "no"
+msgstr "数"
+
+msgid "key"
+msgstr "键"
+
+msgid "old_record"
+msgstr "旧记录"
+
+msgid "new_record"
+msgstr "新纪录"

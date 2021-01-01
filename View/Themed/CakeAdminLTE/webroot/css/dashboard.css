@@ -1,0 +1,63 @@
+.dashboard-title-total-member{
+    color:green; 
+    font-size: 60px;
+    line-height: 70px;
+}
+.dashboard-detail-total-member label{
+    min-width: 65px;
+    width: 35%;
+    font-size: 20px;
+}
+.total-as-of{
+    margin-top: 32px;
+}
+.dashboard-detail-total-member .item{
+    font-size: 36px;
+    display: inline-block;
+}
+.dashboard-detail-total-member .number-male{
+    color: blue;
+}
+.dashboard-detail-total-member .number-female{
+    color: red;
+}
+.dashboard-detail-total-member .number-other{
+    color: purple;
+}
+.box.box-all-info{
+    border: 4px solid #00c0ef;
+}
+.carousel .carousel-inner .dv-item-img{
+    margin: auto;
+    max-width: 550px;
+}
+.carousel .carousel-inner img {
+    width: 100%;
+}
+.cover-doughnut-chart{
+    width:100%; 
+    max-width:650px; 
+    max-height:450px;
+    margin: auto;
+}
+.dashboard-refresh-buttons{
+    text-align: center;
+    padding: 10px;
+}
+
+.dashboard-roll-up-buttons{
+    margin-left: 20px;
+}
+
+.dashboard-registration-number-area .tab-pane, .dashboard-coupon-usage-area, .dashboard-report-notification-area{
+    font-size: 20px;
+}
+.dashboard-coupon-usage-area{
+    min-height: 220px;
+}
+.dashboard-refresh-buttons{
+    font-size: 20px;
+}
+.dashboard-coupon-usage-area i, .dashboard-report-notification-area i{
+    font-size: 14px;
+}

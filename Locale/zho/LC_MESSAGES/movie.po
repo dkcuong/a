@@ -1,0 +1,88 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: zh-HK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_HK\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "item_title"
+msgstr "電影"
+
+msgid "slug"
+msgstr "平板 名稱"
+
+msgid "director"
+msgstr "導演"
+
+msgid "writer"
+msgstr "作家"
+
+msgid "star"
+msgstr "演員"
+
+msgid "language"
+msgstr "語言"
+
+msgid "rating"
+msgstr "分級"
+
+msgid "duration"
+msgstr "片長"
+
+msgid "poster"
+msgstr "海報"
+
+msgid "video"
+msgstr "預告片"
+
+msgid "movie_type"
+msgstr "片種"
+
+msgid "import_item"
+msgstr "匯入 電影"
+
+msgid "add_item"
+msgstr "添加 電影"
+
+msgid "edit_item"
+msgstr "修改 電影"
+
+msgid "import_item_type"
+msgstr "匯入 片種"
+
+msgid "add_item_type"
+msgstr "添加 片種"
+
+msgid "edit_item_type"
+msgstr "修改 片種"
+
+msgid "surname"
+msgstr "姓"
+
+msgid "first_name"
+msgstr "名"
+
+msgid "photo"
+msgstr "照片"
+
+msgid "add_star"
+msgstr "添加 演員"
+
+msgid "edit_star"
+msgstr "修改 演員"
+
+msgid "import_star"
+msgstr "匯入 演員"
+
+msgid "director"
+msgstr "導演"
+
+msgid "cast"
+msgstr "演員"

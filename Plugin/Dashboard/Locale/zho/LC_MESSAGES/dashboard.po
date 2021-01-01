@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_HK\n"
+"X-Generator: Poedit 2.3.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "gender_member"
+msgstr "會員性別"
+
+msgid "birthday_member"
+msgstr "會員出生"
+
+msgid "high_spending"
+msgstr "消費"
+
+msgid "most_visited"
+msgstr "回訪消費"

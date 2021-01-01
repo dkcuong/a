@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_HK\n"
+"X-Generator: Poedit 2.3.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "gender_member"
+msgstr "Gender Member"
+
+msgid "birthday_member"
+msgstr "Birthday Member"
+
+msgid "high_spending"
+msgstr "High Spending"
+
+msgid "most_visited"
+msgstr "Most Visited"
+
+msgid "total_amount"
+msgstr "Total Sales"
+
+msgid "total_amount_ticket"
+msgstr "Total Sales Ticket"
+
+msgid "total_amount_tuckshop"
+msgstr "Total Sales Tuckshop"
+
+msgid "total_amount_member"
+msgstr "Total Sales Member"
+
+msgid "total_ticket"
+msgstr "Total Tickets"
+
+msgid "statistic_payment_method"
+msgstr "Statistic Payment Method"
+
+msgid "statistic_movie"
+msgstr "Statistic Movie"
+

@@ -1,0 +1,7 @@
+tmp/logs/
+tmp/cache/
+config/env.php
+webroot/img/uploads/
+/.idea
+webroot/img/
+/.favorites.json

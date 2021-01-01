@@ -1,0 +1,2 @@
+ALTER TABLE `acx_hall_details` ADD `is_blocked_seat` tinyint(1) NOT NULL DEFAULT 0 AFTER `is_disability_seat`;
+ALTER TABLE `acx_schedule_detail_layouts` ADD `is_blocked_seat` tinyint(1) NOT NULL DEFAULT 0 AFTER `is_disability_seat`;

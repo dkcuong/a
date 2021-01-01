@@ -1,0 +1,47 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_US\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+
+msgid "item_title"
+msgstr "Booking Enquiry"
+
+msgid "add_item"
+msgstr "Create Booking Enquiry"
+
+msgid "edit_item"
+msgstr "Edit Booking Enquiry"
+
+msgid "equipment"
+msgstr "Equipment"
+
+msgid "item"
+msgstr "Item"
+
+msgid "time_from"
+msgstr "Time From"
+
+msgid "time_to"
+msgstr "Time To"
+
+msgid "event_purpose"
+msgstr "Event Purpose"
+
+msgid "no_of_attendee"
+msgstr "No Of Attendee"
+
+msgid "special_request"
+msgstr "Special Request"
+
+msgid "movie_name"
+msgstr "Movie Name"

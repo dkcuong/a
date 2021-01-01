@@ -1,0 +1,958 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_US\n"
+"X-Generator: Poedit 2.2.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "home"
+msgstr "Home"
+
+msgid "administrator"
+msgstr "Administrator"
+
+msgid "administrators"
+msgstr "Admimistrators"
+
+msgid "permissions"
+msgstr "Permissions"
+
+msgid "roles"
+msgstr "Roles"
+
+msgid "shop"
+msgstr "Shop"
+
+msgid "shops"
+msgstr "Shops"
+
+msgid "fact"
+msgstr "Information"
+
+msgid "facts"
+msgstr "Informations"
+
+msgid "please_select"
+msgstr "Please select"
+
+msgid "submit"
+msgstr "Submit"
+
+msgid "enabled"
+msgstr "Enabled"
+
+msgid "disabled"
+msgstr "Disabled"
+
+msgid "reset"
+msgstr "Reset"
+
+msgid "reset_password"
+msgstr "Reset Password"
+
+msgid "search"
+msgstr "Search"
+
+msgid "export CSV"
+msgstr "Export CSV"
+
+msgid "export_excel"
+msgstr "Export Excel"
+
+msgid "import_excel"
+msgstr "Import Excel"
+
+msgid "data_is_saved"
+msgstr "Data is saved"
+
+msgid "data_is_not_saved"
+msgstr "Data is not saved"
+
+msgid "data_is_deleted"
+msgstr "Data is deleted"
+
+msgid "data_is_not_deleted"
+msgstr "Data is not deleted"
+
+msgid "data_not_delete_was_used"
+msgstr "Data is not deleted because it was used"
+
+msgid "invalid_data"
+msgstr "Invalid data: "
+
+msgid "old_password_same_as_new_password"
+msgstr "Old password cannot same as new password"
+
+msgid "new_password_not_match_renew_password"
+msgstr "New password not match with renew password"
+
+msgid "remember_me"
+msgstr "Remember me"
+
+msgid "login"
+msgstr "Login"
+
+msgid "forget_password"
+msgstr "Forgot password"
+
+msgid "powered_by"
+msgstr "powered by"
+
+msgid "operation"
+msgstr "Operation"
+
+msgid "created_by"
+msgstr "Created By"
+
+msgid "created"
+msgstr "Created"
+
+msgid "updated_by"
+msgstr "Updated by"
+
+msgid "updated"
+msgstr "Updated"
+
+msgid "view"
+msgstr "View"
+
+msgid "add"
+msgstr "Add"
+
+msgid "edit"
+msgstr "Edit"
+
+msgid "delete"
+msgstr "Delete"
+
+msgid "add_image"
+msgstr "Add image"
+
+msgid "image"
+msgstr "Image"
+
+msgid "full_name"
+msgstr "Full Name"
+
+msgid "retrieve_data_successfully"
+msgstr "Retrieve data is successful"
+
+msgid "retrieve_data_not_successfully"
+msgstr "Retrieve data is not successful"
+
+msgid "missing_parameter"
+msgstr "Missing parameter: "
+
+msgid "export_csv_fail"
+msgstr "Export csv is failed"
+
+msgid "no_record"
+msgstr "No record"
+
+msgid "slug"
+msgstr "Slug"
+
+msgid "sorting"
+msgstr "Sorting"
+
+msgid "id"
+msgstr "Id"
+
+msgid "email"
+msgstr "Email"
+
+msgid "country_code"
+msgstr "Country Code"
+
+msgid "phone"
+msgstr "Phone"
+
+msgid "archived"
+msgstr "Archived"
+
+msgid "remark"
+msgstr "Remark"
+
+msgid "jan"
+msgstr "January"
+
+msgid "feb"
+msgstr "Febuary"
+
+msgid "mar"
+msgstr "March"
+
+msgid "apr"
+msgstr "April"
+
+msgid "may"
+msgstr "May"
+
+msgid "jun"
+msgstr "June"
+
+msgid "jul"
+msgstr "July"
+
+msgid "aug"
+msgstr "August"
+
+msgid "sep"
+msgstr "September"
+
+msgid "oct"
+msgstr "October"
+
+msgid "nov"
+msgstr "November"
+
+msgid "dec"
+msgstr "December"
+
+msgid "default_all_select"
+msgstr "All select default"
+
+msgid "all"
+msgstr "All"
+
+msgid "password"
+msgstr "Password"
+
+msgid "edit_password"
+msgstr "Edit password"
+
+msgid "static_date"
+msgstr "Static Date"
+
+msgid "dynamic_date"
+msgstr "Dynamic Date"
+
+msgid "old_password"
+msgstr "Old password"
+
+msgid "new_password"
+msgstr "New password"
+
+msgid "confirm_new_password"
+msgstr "Verify password"
+
+msgid "username_password_not_found"
+msgstr "Old Password is not right"
+
+msgid "update_password_succeed"
+msgstr "Update password succeed"
+
+msgid "collapse_all"
+msgstr "Collapse"
+
+msgid "expand_all"
+msgstr "Expand"
+
+msgid "no_data"
+msgstr "No data right now, please come back later"
+
+msgid "thumbnail"
+msgstr "Thumbnail"
+
+msgid "version"
+msgstr "Version"
+
+msgid "does_not_permission_to_access"
+msgstr "You do not have permission to access this page"
+
+msgid "type"
+msgstr "Type"
+
+msgid "code"
+msgstr "Code"
+
+msgid "number"
+msgstr "Number"
+
+msgid "show_duplicate_permission"
+msgstr "Show Duplicate Permission"
+
+msgid "duplicate_email_exists"
+msgstr "email is exists"
+
+msgid "status"
+msgstr "Status"
+
+msgid "name"
+msgstr "Name"
+
+msgid "description"
+msgstr "Description"
+
+msgid "content"
+msgstr "Content"
+
+msgid "terms"
+msgstr "Terms and conditions"
+
+msgid "privacy"
+msgstr "Privacy policy"
+
+msgid "address"
+msgstr "Address"
+
+msgid "opening"
+msgstr "Opening time"
+
+msgid "zho_language"
+msgstr "Chinese(Traditional)"
+
+msgid "chi_language"
+msgstr "Chinese(Simplified)"
+
+msgid "eng_language"
+msgstr "English"
+
+msgid "log"
+msgstr "Log"
+
+msgid "logs"
+msgstr "Logs"
+
+msgid "log_api"
+msgstr "Log API"
+
+msgid "console"
+msgstr "Console"
+
+msgid "not_used_in_mobile"
+msgstr "You are using your mobile phone now. If you want to use this feature, please switch to PC or tablet."
+
+msgid "age"
+msgstr "Age"
+
+msgid "gender"
+msgstr "Gender"
+
+msgid "mon"
+msgstr "Monday"
+
+msgid "tue"
+msgstr "Tuesday"
+
+msgid "wed"
+msgstr "Wednesday"
+
+msgid "thu"
+msgstr "Thursday"
+
+msgid "fri"
+msgstr "Friday"
+
+msgid "sat"
+msgstr "Saturday"
+
+msgid "sun"
+msgstr "Sunday"
+
+msgid "do_you_want_to_publish_or_un"
+msgstr "Do you want to %s '%s'"
+
+msgid "yes"
+msgstr "Yes"
+
+msgid "no"
+msgstr "No"
+
+msgid "close"
+msgstr "Close"
+
+msgid "approve"
+msgstr "Approve"
+
+msgid "reject"
+msgstr "Reject"
+
+msgid "error"
+msgstr "Error"
+
+msgid "received_params"
+msgstr "Received params"
+
+msgid "month"
+msgstr "Month"
+
+msgid "week"
+msgstr "Week"
+
+msgid "zho_name"
+msgstr "Hong Kong"
+
+msgid "chi_name"
+msgstr "China"
+
+msgid "eng_name"
+msgstr "English"
+
+msgid "zho_short_name"
+msgstr "HK"
+
+msgid "chi_short_name"
+msgstr "Chi"
+
+msgid "eng_short_name"
+msgstr "Eng"
+
+msgid "thank_you"
+msgstr "Thank You"
+
+msgid "email_subject_forgot_password"
+msgstr "Forgot Password"
+
+msgid "send_sms_failed"
+msgstr "Send SMS failed"
+
+msgid "api_key_is_empty"
+msgstr "Api key is empty"
+
+msgid "credit_over_load"
+msgstr "Credit overload"
+
+msgid "start_date"
+msgstr "Start Date"
+
+msgid "end_date"
+msgstr "End Date"
+
+msgid "start_time"
+msgstr "Start Time"
+
+msgid "end_time"
+msgstr "End Time"
+
+msgid "copy"
+msgstr "Copy"
+
+msgid "export"
+msgstr "Export"
+
+msgid "title"
+msgstr "Title"
+
+msgid "date"
+msgstr "Date"
+
+msgid "time"
+msgstr "Time"
+
+msgid "year"
+msgstr "Year"
+
+msgid "item_was_enabled"
+msgstr "[%s] was enabled"
+
+msgid "item_was_disabled"
+msgstr "[%s] was disabled"
+
+msgid "item_was_published"
+msgstr "[%s] was published"
+
+msgid "item_was_rejected"
+msgstr "[%s] was rejected"
+
+msgid "item_can_not_update"
+msgstr "%s can not update"
+
+msgid "item_can_not_create"
+msgstr "%s can not create"
+
+msgid "item_can_not_delete"
+msgstr "%s can not delete"
+
+msgid "item_is_not_exist"
+msgstr "%s is not exist"
+
+msgid "item_is_invalid_data"
+msgstr "%s is invalid data"
+
+msgid "item_already_used"
+msgstr "%s has already used"
+
+msgid "item_already_expired"
+msgstr "%s has already expired"
+
+msgid "member"
+msgstr "Member"
+
+msgid "members"
+msgstr "Members"
+
+msgid "verification_code"
+msgstr "Verification Code"
+
+msgid "locations"
+msgstr "Locations"
+
+msgid "verification_code_msg"
+msgstr "Your verification code is : %s"
+
+msgid "username_password_msg"
+msgstr "Your Username : %s - Your Password : %s"
+
+msgid "required_text_remark"
+msgstr "(<font color=\"red\">*</font>Is required)"
+
+msgid "item_was_not_approved"
+msgstr "%s was not approved"
+
+msgid "district"
+msgstr "District"
+
+msgid "districts"
+msgstr "Districts"
+
+msgid "logo"
+msgstr "Logo"
+
+msgid "promotion"
+msgstr "Promotion"
+
+msgid "dictionary"
+msgstr "Dictionary"
+
+msgid "mobile_number"
+msgstr "Mobile Number"
+
+msgid "signin_signup"
+msgstr "SIGN IN / SIGN UP"
+
+msgid "signin"
+msgstr "SIGN IN"
+
+msgid "signup"
+msgstr "SIGN UP"
+
+msgid "send_verification_code"
+msgstr "SEND VERIFICATION CODE"
+
+msgid "enter_verification_code"
+msgstr "Enter verification code"
+
+msgid "mandatory"
+msgstr "Mandatory"
+
+msgid "first_name"
+msgstr "First Name"
+
+msgid "birthday_month"
+msgstr "Birthday Month"
+
+msgid "birthday"
+msgstr "Birthday"
+
+msgid "confirm_email"
+msgstr "Confirm Email"
+
+msgid "residence"
+msgstr "Residence"
+
+msgid "working_district_hksar"
+msgstr "Working District (HKSAR only)"
+
+msgid "communication_language"
+msgstr "Communication Language"
+
+msgid "terms_conditions"
+msgstr "Terms & Conditions"
+
+msgid "terms_and_conditions"
+msgstr "Terms and Conditions"
+
+msgid "cust_data_policy"
+msgstr "Customer Data (Privacy) Policy"
+
+msgid "back"
+msgstr "BACK"
+
+msgid "verification_notes"
+msgstr "We have sent the code to your mobile number. <br/>Please enter the code below. "
+
+msgid "frontpage_term"
+msgstr "To continue, you agree to our <br/> %s and acknowledge its %s"
+
+msgid "terms1"
+msgstr "I confirm that I have read carefully the “Use of personal data in direct marketing” section in the Personal Information Collection Statement and I understand how the website may use my personal data for direct marketing purpose and the scope of direct marketing.  I agree to receive direct marketing information (including promotional activities, services and products) relating to Happy Fans Club through email, telephone, SMS and push notification."
+
+msgid "terms2"
+msgstr "I confirm that I have read and understood the website Terms and Conditions, Privacy Policy Statement and Personal Information Collection Statement. I agree to be bound by such Terms and Conditions and consent to the uses specified in the Personal Information Collection Statement therein."
+
+msgid "privacy_policy"
+msgstr "Privacy Policy"
+
+msgid "member_not_found"
+msgstr "Member Not Found"
+
+msgid "verification_code_invalid"
+msgstr "Verification Code is Invalid"
+
+msgid "welcome"
+msgstr "Welcome %s,"
+
+msgid "happy_fan_code"
+msgstr "Happy Fan code: "
+
+msgid "receive_promo"
+msgstr "Receive promo"
+
+msgid "myoffer"
+msgstr "My Offer(%d)"
+
+msgid "myecoupon"
+msgstr "My eCoupon(%d)"
+
+msgid "mall"
+msgstr "Mall"
+
+msgid "validity"
+msgstr "Validity: %s"
+
+msgid "redeem"
+msgstr "REDEEM"
+
+msgid "valid"
+msgstr "Valid"
+
+msgid "used"
+msgstr "Used"
+
+msgid "expired"
+msgstr "Expired"
+
+msgid "coupon_aplicable_at"
+msgstr "Only applicable at %s"
+
+msgid "copied"
+msgstr "COPIED"
+
+msgid "enter_merchant_code"
+msgstr "Merchant to enter merchant code"
+
+msgid "terms_to_redeem"
+msgstr " - Each Food Dollar Coupon values HK$10, settlement amount is equal to the coupon value.<br/> Food Dollar Coupon is valid at participating F&B outlets in designated SHKP shopping malls.<br/>- Food Dollar Coupon can only be used once. Maximum 10 coupons can be used in each transaction. Coupon will be collected after redemption.<br/>- Terms & Conditions are subject to change without prior notice, Sun Hung Kai Properties reserves the right of final decisions in case of disputes."
+
+msgid "success_redeem"
+msgstr "Successfully redeemed"
+
+msgid "personal_account"
+msgstr "Personal Account"
+
+msgid "personal_account_update"
+msgstr "Personal Account Update"
+
+msgid "logout"
+msgstr "Logout"
+
+msgid "res_chi"
+msgstr "China"
+
+msgid "res_zho"
+msgstr "HKSAR"
+
+msgid "res_mac"
+msgstr "Macau SAR"
+
+msgid "res_oth"
+msgstr "Others"
+
+msgid "zho"
+msgstr "Tranditional Chinese"
+
+msgid "chi"
+msgstr "Simple Chinese"
+
+msgid "eng"
+msgstr "English"
+
+msgid "other_residence"
+msgstr "Other Residence"
+
+msgid "wait"
+msgstr "WAIT "
+
+msgid "duplicate_phone_exists"
+msgstr "Phone is used, please use another phone"
+
+msgid "cancel"
+msgstr "CANCEL"
+
+msgid "success_update"
+msgstr "Successfully updated"
+
+msgid "+852"
+msgstr "Hong Kong"
+
+msgid "+86"
+msgstr "China"
+
+msgid "+83"
+msgstr "Macau"
+
+msgid "add_someone"
+msgstr "Add Someone"
+
+msgid "add_with_filter"
+msgstr "Add with filter"
+
+msgid "there_is_not_any_member_with_this_filter"
+msgstr "There is not any member with this filter"
+
+msgid "merchant_code"
+msgstr "Merchant code"
+
+msgid "voucher_not_found"
+msgstr "Voucher Not Found"
+
+msgid "voucher_has_been_used"
+msgstr "Voucher has been used"
+
+msgid "merchant_code_not_found"
+msgstr "Merchant Code Not Found"
+
+msgid "number_voucher_is_limited"
+msgstr "Voucher can not be redeemed because it has reached the limit"
+
+msgid "number_voucher_for_member_is_limited_by_day"
+msgstr "Voucher can not be redeemed because it has reached the daily limit, Please try again tomorrow"
+
+msgid "number_voucher_for_member_is_limited_by_month"
+msgstr "Voucher can not be redeemed because it has reached the monthly limit, Please try next month"
+
+msgid "number_voucher_for_member_is_limited_by_total"
+msgstr "Voucher can not be redeemed because it has reached the limit."
+
+msgid "privacy_policy_statement"
+msgstr "Privacy Policy Statement"
+
+msgid "voucher"
+msgstr "Voucher"
+
+msgid "invalid_phone_format"
+msgstr "Invalid Phone Format"
+
+msgid "zho_sign"
+msgstr "繁"
+
+msgid "chi_sign"
+msgstr "简"
+
+msgid "eng_sign"
+msgstr "EN"
+
+msgid "all_mall"
+msgstr "All Malls"
+
+msgid "update"
+msgstr "UPDATE"
+
+msgid "field_cannot_be_empty"
+msgstr "%s can not be empty"
+
+msgid "invalid_data_please_refresh"
+msgstr "data invalid, please refresh and try again in a moment"
+
+msgid "mandatory_field"
+msgstr "Mandatory Field"
+
+msgid "email_different_with_confirmation_email"
+msgstr "Email confirmation is different with email."
+
+msgid "phone_verification_code"
+msgstr "Phone and Verification Code"
+
+msgid "["
+msgstr "["
+
+msgid "]"
+msgstr "]"
+
+msgid "last_name"
+msgstr "Last Name"
+
+msgid "offer_detail"
+msgstr "Offer Detail"
+
+msgid "detail"
+msgstr "DETAILS"
+
+msgid "report"
+msgstr "Report"
+
+msgid "high_spending"
+msgstr "High Spending"
+
+msgid "high_visit"
+msgstr "High Visit"
+
+msgid "spending_by_mall"
+msgstr "Spending by mall"
+
+msgid "spending_by_shop"
+msgstr "Spending by shop"
+
+msgid "confirm"
+msgstr "CONFIRM"
+
+msgid "left_qty"
+msgstr "Left : %d times"
+
+msgid "please_select_home_district"
+msgstr "Please select residential district"
+
+msgid "please_select_work_district"
+msgstr "Please select working district"
+
+msgid "male"
+msgstr "Male"
+
+msgid "female"
+msgstr "Female"
+
+msgid "err_terms"
+msgstr "You must agree with our Terms & Conditions and Privacy Statement to complete the registration."
+
+msgid "available_all_malls"
+msgstr "Available All Malls"
+
+msgid "available_malls"
+msgstr "Available Malls"
+
+msgid "name_zho"
+msgstr "Chinese Name"
+
+msgid "name_eng"
+msgstr "English Name"
+
+msgid "are_you_sure_to_delete"
+msgstr "Are you sure you want to delete?"
+
+msgid "pos"
+msgstr "POS"
+
+msgid "price"
+msgstr "Price"
+
+msgid "generate"
+msgstr "Generate"
+
+msgid "token_not_found"
+msgstr "Token Not Found"
+
+msgid "member_found"
+msgstr "Member Found"
+
+msgid "invalid_rules"
+msgstr "Invalid Rules"
+
+msgid "is_required"
+msgstr "is required"
+
+msgid "should_be"
+msgstr "should be"
+
+msgid "today"
+msgstr "Today"
+
+msgid "tomorrow"
+msgstr "Tomorrow"
+
+msgid "overmorrow"
+msgstr "Overmorrow"
+
+msgid "send_code_successfully"
+msgstr "Send code successfully"
+
+msgid "verification_code_is_wrong"
+msgstr "Verification Code is Wrong"
+
+msgid "verified_code_successfully"
+msgstr "Verified code successfully"
+
+msgid "verified_code_unsuccessfully"
+msgstr "Verified code unsuccessfully "
+
+msgid "mr"
+msgstr "Mr"
+
+msgid "ms"
+msgstr "Ms"
+
+msgid "mrs"
+msgstr "Mrs"
+
+msgid "miss"
+msgstr "Miss"
+
+msgid "welcome_coupon_msg"
+msgstr "Your Coupon : %s - Expired Date : %s - QR Code : %s"
+
+msgid "order_qrcode_msg"
+msgstr "Movie: %s - Date: %s - Time: %s - Hall: %s - Number of seats: %s - Seats: %s - QR code: %s"
+
+msgid "qrcode_path"
+msgstr "QR Code"
+
+msgid "number_of_seats"
+msgstr "Number of seats"
+
+msgid "seats"
+msgstr "Seats"
+
+msgid "present_id_card_msg"
+msgstr "Please present valid ID Card / Student ID Card (if any) before admission to the house"
+
+msgid "message"
+msgstr "Message"
+
+msgid "thank_contact_request"
+msgstr "Thank you for your message! We will get back to you as soon as possible."
+
+msgid "settings"
+msgstr "Settings"
+
+msgid "setting"
+msgstr "Setting"
+
+msgid "username"
+msgstr "Username"
+
+msgid "web"
+msgstr "Web"
+
+msgid "mobile"
+msgstr "Mobile"
+
+msgid "inv_number"
+msgstr "Invoice Number"
+
+msgid "create_booking_enquiry_succesfully"
+msgstr "Thank You for your enquiry, we will get in touch with you in 3 working days."
+
+msgid "something_went_wrong"
+msgstr "Something went wrong"
+
+msgid "payment_success"
+msgstr "Payment success"
+
+msgid "warning_level_III"
+msgstr "This film is classified as <span class=\"light-red\">Category III</span>. It is <span class=\"light-red\">only</span> available to people <span class=\"light-red\">aged 18 and above</span>. <br/>Please show valid proof of age upon request. Tickets sold are <span class=\"light-red\">non-refundable</span> and <span class=\"light-red\">non-exchangeable</span>. "
+
+msgid "get_started"
+msgstr "Get started"
+
+msgid "try_again"
+msgstr "Try again"
+
+msgid "pos_registration_msg"
+msgstr "Dear new member, please register your membership at this link : %s"

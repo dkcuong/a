@@ -1,0 +1,5 @@
+# Ignore all files under this directory
+*
+
+# Except this
+!.gitkeep

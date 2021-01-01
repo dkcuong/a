@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_US\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "hall_title"
+msgstr "Hall"
+
+msgid "add_hall"
+msgstr "Add Hall"
+
+msgid "edit_hall"
+msgstr "Edit Hall"
+
+msgid "import_hall"
+msgstr "Import Halls"
+
+msgid "max_seat"
+msgstr "Max Seats"
+
+msgid "row"
+msgstr "Row"
+
+msgid "column"
+msgstr "Column"
+
+msgid "seat_layout"
+msgstr "Seating Layout"
+
+msgid "user_seat_layout"
+msgstr "Seating Layout"
+
+msgid "cinema_title"
+msgstr "Cinema"
+
+msgid "add_cinema"
+msgstr "Add Cinema"
+
+msgid "edit_cinema"
+msgstr "Edit Cinema"
+
+msgid "import_cinema"
+msgstr "Import Cinemas"
+
+msgid "location"
+msgstr "Location"
+
+msgid "booking_enquiry_title"
+msgstr "Booking Enquiry"
+
+msgid "staff_log_title"
+msgstr "Staff Log"
+

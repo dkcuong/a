@@ -1,0 +1,897 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Oliver Guo\n"
+"Language-Team: zh-HK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_HK\n"
+"X-Generator: Poedit 2.2.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "home"
+msgstr "首頁"
+
+msgid "administrator"
+msgstr "管理員"
+
+msgid "administrators"
+msgstr "管理人員"
+
+msgid "permissions"
+msgstr "權限"
+
+msgid "roles"
+msgstr "角色"
+
+msgid "shop"
+msgstr "商舖"
+
+msgid "shops"
+msgstr "商舖"
+
+msgid "fact"
+msgstr "設定"
+
+msgid "facts"
+msgstr "設定"
+
+msgid "please_select"
+msgstr "請選擇"
+
+msgid "submit"
+msgstr "提交"
+
+msgid "enabled"
+msgstr "啟用"
+
+msgid "disabled"
+msgstr "停用"
+
+msgid "reset"
+msgstr "重設"
+
+msgid "reset_password"
+msgstr "重設密碼"
+
+msgid "search"
+msgstr "搜索"
+
+msgid "export CSV"
+msgstr "匯出 CSV"
+
+msgid "export_excel"
+msgstr "匯出 Excel"
+
+msgid "import_excel"
+msgstr "匯入 Excel"
+
+msgid "data_is_saved"
+msgstr "資料已保存"
+
+msgid "data_is_not_saved"
+msgstr "資料保存失敗"
+
+msgid "data_is_deleted"
+msgstr "資料已刪除"
+
+msgid "data_is_not_deleted"
+msgstr "資料刪除失敗"
+
+msgid "data_not_delete_was_used"
+msgstr "資料不能被刪除，因有資料關聯"
+
+msgid "invalid_data"
+msgstr "無效資料"
+
+msgid "old_password_same_as_new_password"
+msgstr "舊密碼不能等同新密碼"
+
+msgid "new_password_not_match_renew_password"
+msgstr "新密碼不一致"
+
+msgid "remember_me"
+msgstr "記住我"
+
+msgid "login"
+msgstr "登入"
+
+msgid "forget_password"
+msgstr "忘記密碼"
+
+msgid "powered_by"
+msgstr ""
+
+msgid "operation"
+msgstr "操作"
+
+msgid "created_by"
+msgstr "創建於"
+
+msgid "created"
+msgstr "創建時間"
+
+msgid "updated_by"
+msgstr "更新於"
+
+msgid "updated"
+msgstr "更新時間"
+
+msgid "view"
+msgstr "查看"
+
+msgid "add"
+msgstr "添加"
+
+msgid "edit"
+msgstr "修改"
+
+msgid "delete"
+msgstr "刪除"
+
+msgid "add_image"
+msgstr "上載圖片"
+
+msgid "image"
+msgstr "圖片"
+
+msgid "full_name"
+msgstr "全名"
+
+msgid "retrieve_data_successfully"
+msgstr "獲取數據成功"
+
+msgid "retrieve_data_not_successfully"
+msgstr "獲取數據失敗"
+
+msgid "missing_parameter"
+msgstr "參數丟失: "
+
+msgid "export_csv_fail"
+msgstr "匯出失敗"
+
+msgid "no_record"
+msgstr "未有紀錄"
+
+msgid "slug"
+msgstr "Slug"
+
+msgid "sorting"
+msgstr "排序"
+
+msgid "id"
+msgstr "號"
+
+msgid "email"
+msgstr "電郵地址"
+
+msgid "phone"
+msgstr "手機號碼"
+
+msgid "archived"
+msgstr "存檔"
+
+msgid "remark"
+msgstr "備註"
+
+msgid "jan"
+msgstr "一月"
+
+msgid "feb"
+msgstr "二月"
+
+msgid "mar"
+msgstr "三月"
+
+msgid "apr"
+msgstr "四月"
+
+msgid "may"
+msgstr "五月"
+
+msgid "jun"
+msgstr "六月"
+
+msgid "jul"
+msgstr "七月"
+
+msgid "aug"
+msgstr "八月"
+
+msgid "sep"
+msgstr "九月"
+
+msgid "oct"
+msgstr "十月"
+
+msgid "nov"
+msgstr "十一月"
+
+msgid "dec"
+msgstr "十二月"
+
+msgid "default_all_select"
+msgstr "默認選擇全部"
+
+msgid "all"
+msgstr "全部"
+
+msgid "password"
+msgstr "密碼"
+
+msgid "edit_password"
+msgstr "更改密碼"
+
+msgid "static_date"
+msgstr "固定日期"
+
+msgid "dynamic_date"
+msgstr "動態日期"
+
+msgid "old_password"
+msgstr "舊密碼"
+
+msgid "new_password"
+msgstr "新密碼"
+
+msgid "confirm_new_password"
+msgstr "重新輸入密碼"
+
+msgid "username_password_not_found"
+msgstr "舊密碼不正確"
+
+msgid "update_password_succeed"
+msgstr "更改密碼成功"
+
+msgid "collapse_all"
+msgstr "收縮"
+
+msgid "expand_all"
+msgstr "張開"
+
+msgid "no_data"
+msgstr "未有數據，請稍候更新"
+
+msgid "thumbnail"
+msgstr "縮略圖"
+
+msgid "version"
+msgstr "版本"
+
+msgid "does_not_permission_to_access"
+msgstr "未有權限"
+
+msgid "type"
+msgstr "類型"
+
+msgid "code"
+msgstr "碼"
+
+msgid "number"
+msgstr "數碼"
+
+msgid "show_duplicate_permission"
+msgstr "顯示重複權限"
+
+msgid "duplicate_email_exists"
+msgstr "電郵地址已登記"
+
+msgid "status"
+msgstr "狀態"
+
+msgid "name"
+msgstr "名稱"
+
+msgid "description"
+msgstr "細節"
+
+msgid "content"
+msgstr "內容"
+
+msgid "terms"
+msgstr "條款及細則"
+
+msgid "privacy"
+msgstr "私隱條例"
+
+msgid "address"
+msgstr "地址"
+
+msgid "opening"
+msgstr "營業時間"
+
+msgid "zho_language"
+msgstr "繁體中文"
+
+msgid "chi_language"
+msgstr "簡體中文"
+
+msgid "eng_language"
+msgstr "英文"
+
+msgid "log"
+msgstr "紀錄"
+
+msgid "logs"
+msgstr "日誌"
+
+msgid "log_api"
+msgstr "紀錄 API"
+
+msgid "console"
+msgstr "控制台"
+
+msgid "not_used_in_mobile"
+msgstr ""
+"You are using your mobile phone now. If you want to use this feature, please "
+"switch to PC or tablet."
+
+msgid "age"
+msgstr "年齡"
+
+msgid "gender"
+msgstr "性別"
+
+msgid "mon"
+msgstr "星期一"
+
+msgid "tue"
+msgstr "星期二"
+
+msgid "wed"
+msgstr "星期三"
+
+msgid "thu"
+msgstr "星期四"
+
+msgid "fri"
+msgstr "星期五"
+
+msgid "sat"
+msgstr "星期六"
+
+msgid "sun"
+msgstr "星期日"
+
+msgid "do_you_want_to_publish_or_un"
+msgstr "是否確定 %s '%s'"
+
+msgid "yes"
+msgstr "確定"
+
+msgid "no"
+msgstr "取消"
+
+msgid "close"
+msgstr "關閉"
+
+msgid "approve"
+msgstr "批准"
+
+msgid "reject"
+msgstr "拒絕"
+
+msgid "error"
+msgstr "錯誤"
+
+msgid "received_params"
+msgstr "已獲取參數"
+
+msgid "month"
+msgstr "月份"
+
+msgid "week"
+msgstr "週"
+
+msgid "zho_name"
+msgstr "繁體中文"
+
+msgid "chi_name"
+msgstr "簡體中文"
+
+msgid "eng_name"
+msgstr "英文"
+
+msgid "zho_short_name"
+msgstr "HK"
+
+msgid "chi_short_name"
+msgstr "Chi"
+
+msgid "eng_short_name"
+msgstr "Eng"
+
+msgid "thank_you"
+msgstr "謝謝"
+
+msgid "email_subject_forgot_password"
+msgstr "忘記密碼"
+
+msgid "send_sms_failed"
+msgstr "發送驗證碼失敗"
+
+msgid "api_key_is_empty"
+msgstr "Api key 不能空"
+
+msgid "credit_over_load"
+msgstr "餘額不足"
+
+msgid "start_date"
+msgstr "開始日期"
+
+msgid "end_date"
+msgstr "結束日期"
+
+msgid "start_time"
+msgstr "開始時間"
+
+msgid "end_time"
+msgstr "結束時間"
+
+msgid "copy"
+msgstr "複製"
+
+msgid "export"
+msgstr "匯出"
+
+msgid "title"
+msgstr "標題"
+
+msgid "date"
+msgstr "日期"
+
+msgid "year"
+msgstr "年份"
+
+msgid "item_was_enabled"
+msgstr "[%s] 已啟用"
+
+msgid "item_was_disabled"
+msgstr "[%s] 已停用"
+
+msgid "item_was_published"
+msgstr "[%s] 已發佈"
+
+msgid "item_was_rejected"
+msgstr "[%s] 已拒絕"
+
+msgid "item_can_not_update"
+msgstr "%s 不能更新"
+
+msgid "item_can_not_create"
+msgstr "%s 不能創建"
+
+msgid "item_can_not_delete"
+msgstr "%s 不能刪除"
+
+msgid "item_is_not_exist"
+msgstr "%s 不存在"
+
+msgid "item_is_invalid_data"
+msgstr "%s 無效數據"
+
+msgid "item_already_used"
+msgstr "%s 已被使用"
+
+msgid "item_already_expired"
+msgstr "%s 已失效"
+
+msgid "member"
+msgstr "會員"
+
+msgid "members"
+msgstr "會員列表"
+
+msgid "verification_code"
+msgstr "驗證碼"
+
+msgid "locations"
+msgstr "地址"
+
+msgid "verification_code_msg"
+msgstr "您的驗證碼係 : %s"
+
+msgid "required_text_remark"
+msgstr "(<font color=\"red\">*</font>必填)"
+
+msgid "item_was_not_approved"
+msgstr "%s 已拒絕"
+
+msgid "district"
+msgstr "地區"
+
+msgid "districts"
+msgstr "地區列表"
+
+msgid "logo"
+msgstr "Logo"
+
+msgid "promotion"
+msgstr "推廣"
+
+msgid "dictionary"
+msgstr "字典"
+
+msgid "mobile_number"
+msgstr "手機號碼"
+
+msgid "signin_signup"
+msgstr "登入 / 登記"
+
+msgid "signin"
+msgstr "登入"
+
+msgid "signup"
+msgstr "登記"
+
+msgid "send_verification_code"
+msgstr "發送驗證碼"
+
+msgid "enter_verification_code"
+msgstr "輸入驗證碼"
+
+msgid "mandatory"
+msgstr "必填"
+
+msgid "first_name"
+msgstr "姓氏"
+
+msgid "birthday_month"
+msgstr "出生月份"
+
+msgid "birthday"
+msgstr "生日"
+
+msgid "confirm_email"
+msgstr "確認電郵"
+
+msgid "residence"
+msgstr "居住地區"
+
+msgid "working_district_hksar"
+msgstr "工作地區 (僅香港)"
+
+msgid "communication_language"
+msgstr "設定語言"
+
+msgid "terms_conditions"
+msgstr "條款及細則"
+
+msgid "terms_and_conditions"
+msgstr "條款及細則"
+
+msgid "cust_data_policy"
+msgstr "私隱條例"
+
+msgid "back"
+msgstr "返回"
+
+msgid "verification_notes"
+msgstr "我們已發送驗證碼. <br/>請在下方輸入驗証碼. "
+
+msgid "frontpage_term"
+msgstr "已了解 <br/> %s 及 %s"
+
+msgid "terms1"
+msgstr ""
+"本人確認本人已仔細閱讀「個人資料收集聲明」內的「使用個人資料作直接促銷」部份"
+"的條文，並且明白本網站可以如何使用本人的個人資料作直接促銷用途，以及直接促銷"
+"的範圍。本人同意透過電郵、電話、SMS及推送訊息收取有關本網站的直接促銷資訊(包"
+"括推廣活動、服務及產品)。"
+
+msgid "terms2"
+msgstr ""
+"本人確認本人已詳閲及明白本網站條款及細則、私隱政策聲明及個人資料收集聲明。本"
+"人同意接受並遵從條款及細則及同意個人資料收集聲明所指明的用途。"
+
+msgid "privacy_policy"
+msgstr "私隱條例"
+
+msgid "member_not_found"
+msgstr "未有該會員"
+
+msgid "verification_code_invalid"
+msgstr "無效驗證碼"
+
+msgid "welcome"
+msgstr "歡迎 %s,"
+
+msgid "happy_fan_code"
+msgstr "Happy Fan code: "
+
+msgid "receive_promo"
+msgstr "接受推廣"
+
+msgid "myoffer"
+msgstr "我的獎賞(%d)"
+
+msgid "myecoupon"
+msgstr "我的電子禮券(%d)"
+
+msgid "mall"
+msgstr "商場"
+
+msgid "validity"
+msgstr "有效期: %s"
+
+msgid "redeem"
+msgstr "換領"
+
+msgid "valid"
+msgstr "有效"
+
+msgid "used"
+msgstr "已使用"
+
+msgid "expired"
+msgstr "已失效"
+
+msgid "coupon_aplicable_at"
+msgstr "只適用 %s"
+
+msgid "copied"
+msgstr "已複製"
+
+msgid "enter_merchant_code"
+msgstr "商戶輸入商戶號碼"
+
+msgid "terms_to_redeem"
+msgstr ""
+" - Each Food Dollar Coupon values HK$10, settlement amount is equal to the "
+"coupon value.<br/> Food Dollar Coupon is valid at participating F&B outlets "
+"in designated SHKP shopping malls.<br/>- Food Dollar Coupon can only be used "
+"once. Maximum 10 coupons can be used in each transaction. Coupon will be "
+"collected after redemption.<br/>- Terms & Conditions are subject to change "
+"without prior notice, Sun Hung Kai Properties reserves the right of final "
+"decisions in case of disputes."
+
+msgid "success_redeem"
+msgstr "兌換成功"
+
+msgid "personal_account"
+msgstr "個人帳戶"
+
+msgid "personal_account_update"
+msgstr "更新個人帳戶"
+
+msgid "logout"
+msgstr "登出"
+
+msgid "res_chi"
+msgstr "中國"
+
+msgid "res_zho"
+msgstr "香港特別行政區"
+
+msgid "res_mac"
+msgstr "澳門特別行政區"
+
+msgid "res_oth"
+msgstr "其他"
+
+msgid "zho"
+msgstr "繁體中文"
+
+msgid "chi"
+msgstr "簡體中文"
+
+msgid "eng"
+msgstr "英文"
+
+msgid "other_residence"
+msgstr "其他地區"
+
+msgid "wait"
+msgstr "耐心等待 "
+
+msgid "duplicate_phone_exists"
+msgstr "手機號碼已被登記，請更換"
+
+msgid "cancel"
+msgstr "取消"
+
+msgid "success_update"
+msgstr "更新成功"
+
+msgid "+852"
+msgstr "香港"
+
+msgid "+86"
+msgstr "中國"
+
+msgid "+853"
+msgstr "澳門"
+
+msgid "add_someone"
+msgstr "添加具體會員"
+
+msgid "add_with_filter"
+msgstr "按條件添加會員"
+
+msgid "voucher"
+msgstr "獎賞"
+
+msgid "there_is_not_any_member_with_this_filter"
+msgstr "未搜索到有關會員紀錄"
+
+msgid "merchant_code"
+msgstr "商舖密碼"
+
+msgid "voucher_not_found"
+msgstr "獎賞不存在"
+
+msgid "voucher_has_been_used"
+msgstr "獎賞已被使用"
+
+msgid "merchant_code_not_found"
+msgstr "無效商舖密碼"
+
+msgid "number_voucher_for_member_is_limited_by_day"
+msgstr "已超過數量限定，獎賞不能兌換，請明日再試"
+
+msgid "number_voucher_for_member_is_limited_by_month"
+msgstr "已超過數量限定，獎賞不能兌換，請下個月再試"
+
+msgid "number_voucher_for_member_is_limited_by_total"
+msgstr "已超過數量限定，獎賞不能兌換"
+
+msgid "privacy_policy_statement"
+msgstr "私隱條例"
+
+msgid "invalid_phone_format"
+msgstr "手機號碼格式有誤"
+
+msgid "zho_sign"
+msgstr "繁"
+
+msgid "chi_sign"
+msgstr "简"
+
+msgid "eng_sign"
+msgstr "EN"
+
+msgid "all_mall"
+msgstr "全部商場"
+
+msgid "update"
+msgstr "更新"
+
+msgid "field_cannot_be_empty"
+msgstr "%s 必填"
+
+msgid "invalid_data_please_refresh"
+msgstr "資料無效，請再嘗試更新頁面"
+
+msgid "mandatory_field"
+msgstr "必填項目"
+
+msgid "email_different_with_confirmation_email"
+msgstr "請輸入一致電郵地址"
+
+msgid "phone_verification_code"
+msgstr "手機號碼及驗證碼"
+
+msgid "["
+msgstr "【"
+
+msgid "]"
+msgstr "】"
+
+msgid "last_name"
+msgstr "名稱"
+
+msgid "offer_detail"
+msgstr "獎賞內容"
+
+msgid "detail"
+msgstr "詳細"
+
+msgid "report"
+msgstr "報告"
+
+msgid "high_spending"
+msgstr "消費"
+
+msgid "high_visit"
+msgstr "回訪"
+
+msgid "spending_by_mall"
+msgstr "商場消費"
+
+msgid "spending_by_shop"
+msgstr "分店消費"
+
+msgid "confirm"
+msgstr "確認"
+
+msgid "left_qty"
+msgstr "剩餘 : %d 次"
+
+msgid "please_select_home_district"
+msgstr "請選擇居住地區"
+
+msgid "please_select_work_district"
+msgstr "請選擇工作地區"
+
+msgid "male"
+msgstr "男"
+
+msgid "female"
+msgstr "女"
+
+msgid "err_terms"
+msgstr "閣下必須同意本網站之條款及細則及私隱聲明方可登記。"
+
+msgid "available_all_malls"
+msgstr "適用全部商場"
+
+msgid "available_malls"
+msgstr "適用商場"
+
+msgid "name_zho"
+msgstr "中文名"
+
+msgid "name_eng"
+msgstr "英文名"
+
+msgid "are_you_sure_to_delete"
+msgstr "確認刪除？"
+
+msgid "pos"
+msgstr "付款終端"
+
+msgid "price"
+msgstr "價值"
+
+msgid "generate"
+msgstr "生成"
+
+msgid "token_not_found"
+msgstr "令牌不正確"
+
+msgid "member_found"
+msgstr "認證會員"
+
+msgid "invalid_rules"
+msgstr "規則有誤"
+
+msgid "is_required"
+msgstr "是需要的"
+
+msgid "should_be"
+msgstr "應該是"
+
+msgid "country_code"
+msgstr "Country Code"
+
+msgid "message"
+msgstr "留言"
+
+msgid "thank_contact_request"
+msgstr "感謝您的留言！我們將盡快與您聯繫。"
+
+msgid "create_booking_enquiry_succesfully"
+msgstr "感謝你的查詢，我將會在三個工作天內與閣下聯絡。"
+
+msgid "something_went_wrong"
+msgstr "出了些問題"
+
+msgid "payment_success"
+msgstr "付款成功"
+
+msgid "warning_level_III"
+msgstr ""
+"此片已被檢定為三級影片，只准十八歲或以上人士觀看。 入場人士必須出示有效身份証"
+"明文件，所有已出售的戲票一律不作退款及更換。"
+
+msgid "get_started"
+msgstr "開始吧"
+
+msgid "try_again"
+msgstr "再試一次"
+
+msgid "pos_registration_msg"
+msgstr "Dear new member, please register your membership at this link : %s"
