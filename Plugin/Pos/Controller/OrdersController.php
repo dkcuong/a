@@ -3049,7 +3049,10 @@ class OrdersController extends PosAppController {
         if ($data_search['type'] == 6) {
             $objReport = ClassRegistry::init('Pos.Report');
             $data  = $objReport->report_6($now, $lang);
-            if (empty($data['result_format'])) {
+            if (empty($data['order']['result_format'])
+                && empty($data['purchase']['result_format'])
+                && empty($data['member']['result_format'])
+            ) {
                 $this->Session->setFlash(__('dont_have_data_report'), 'flash/error');
                 goto goto_view;
             }

@@ -38,7 +38,12 @@ class TicketingpageController extends AppController {
 
 		$objSchedule = ClassRegistry::init('Movie.Schedule');
 		$data_schedule =  $objSchedule->get_schedule($data, $current_date, $is_manager, true);
-	
+
+        $list_movie_id = Hash::extract($data_schedule, '{n}.movie_id');
+        // get movie name
+        $objMovie = ClassRegistry::init('Movie.Movie');
+        $list_name_movie = $objMovie->get_movie_name($list_movie_id);
+
 		$schedule['Schedule'] = $list;
 		$schedule['Schedule'][$current_date]['Movie'] = $data_schedule;
 
@@ -47,6 +52,6 @@ class TicketingpageController extends AppController {
 
 		$display_link_signout = true;
 
-		$this->set(compact('schedule', 'current_schedule', 'schedule_json', 'display_link_signout'));
+		$this->set(compact('schedule', 'current_schedule', 'schedule_json', 'display_link_signout', 'list_name_movie'));
 	}
 }

@@ -87,12 +87,18 @@ class SchedulingpageController extends AppController {
 
 		$data_schedule = $objSchedule->find('first', $option_schedule);
 
+		// get movie name
+        $objMovie = ClassRegistry::init('Movie.Movie');
+        $name_movie = $objMovie->get_movie_name($data_schedule['Schedule']['movie_id']);
+
 		if (!isset($data_schedule['Schedule']['id']) || empty($data_schedule['Schedule']['id'])) {
 			$this->redirect(array('controller' => 'Ticketingpage','action' => 'index'));
 		}
 
 		$schedule = array();
 		$schedule['Movie']['name'] = strtoupper($data_schedule['MovieLanguage']['name'] . "(".$data_schedule['MovieType']['name'] .")");
+        $schedule['Movie']['name_zho'] = strtoupper($name_movie[$data_schedule['Schedule']['movie_id']]['zho']['name'] . " (".$data_schedule['MovieType']['name'] .")");
+
 		$schedule['Schedule'] = $list;
 
 		$is_today = ($active_date == $current_date) ? 1 : 0;

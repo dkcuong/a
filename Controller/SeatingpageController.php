@@ -24,6 +24,7 @@ class SeatingpageController extends AppController {
 				'MovieLanguage.name',
 				'MovieType.name',
 				'Hall.code',
+                'Movie.id',
 				'Movie.duration',
 				'Movie.language',
 				'Movie.subtitle',
@@ -110,6 +111,9 @@ class SeatingpageController extends AppController {
 		unset($movie['ScheduleDetailLayout']);
 		unset($movie['ScheduleDetailTicketType']);
 
+        $objMovie = ClassRegistry::init('Movie.Movie');
+        $list_name_movie = $objMovie->get_movie_name($movie['Movie']['id']);
+
 		$ticket_types = $data_schedule['ScheduleDetailTicketType'];
 
 		$seat_layout = array();
@@ -159,6 +163,6 @@ class SeatingpageController extends AppController {
 			$selected_seat = Hash::extract($data_order['OrderDetail'], '{n}.schedule_detail_layout_id');
 		}
 
-		$this->set(compact('schedule_detail_id', 'movie', 'seat_layout', 'ticket_types', 'data_order', 'selected_seat', 'is_full'));
+		$this->set(compact('schedule_detail_id', 'movie', 'seat_layout', 'ticket_types', 'data_order', 'selected_seat', 'is_full', 'list_name_movie'));
 	}
 }

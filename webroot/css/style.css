@@ -538,6 +538,28 @@ button:focus{
     color: rgba(39,34,34, 0.8);
 }
 
+.div-today-sale-item{
+    height: 100px;
+    display: flex;
+    font-size : 1rem!important;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 0.5px solid #D9D9D9;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    color: rgba(39,34,34, 0.8);
+}
+
+.div-today-sale-footer{
+    text-align: right;
+    margin-right: 2.0833%;
+    font-size : 1.2rem;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
 .div-schedule-item.disabled{
     opacity: 0.4;
     box-shadow: none;

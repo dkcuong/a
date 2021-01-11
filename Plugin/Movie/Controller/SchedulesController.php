@@ -90,6 +90,7 @@ class SchedulesController extends MovieAppController {
 				'MovieType.name',
 				'Movie.code',
 				'Hall.code',
+                'GROUP_CONCAT(DISTINCT(MovieLanguage.name) SEPARATOR " ,,,,, ") as movie_name'
 			),
 			'joins' => array(
 				array(
@@ -133,6 +134,14 @@ class SchedulesController extends MovieAppController {
 						'Schedule.id = ScheduleDetail.schedule_id',
 					),
 				),
+                array(
+                    'alias' => 'MovieLanguage',
+                    'table' => Environment::read('table_prefix') . 'movie_languages',
+                    'type' => 'left',
+                    'conditions' => array(
+                        'MovieLanguage.movie_id = Movie.id',
+                    ),
+                ),
 			),
 			'conditions' => array(
 				'ScheduleDetail.schedule_id > 0',
@@ -166,9 +175,9 @@ class SchedulesController extends MovieAppController {
 		$halls = $objHall->find('list', array(
             'fields' => array('id', 'code'),
 		));
-
+        $lang18 = $this->lang18;
         $this->set('dbdatas', $this->paginate());
-        $this->set(compact('model', 'data_search', 'movies', 'halls'));
+        $this->set(compact('model', 'data_search', 'movies', 'halls', 'lang18' ));
 	}
 
     public function admin_past_index() {
@@ -229,6 +238,7 @@ class SchedulesController extends MovieAppController {
                 'MovieType.name',
                 'Movie.code',
                 'Hall.code',
+                'GROUP_CONCAT(DISTINCT(MovieLanguage.name) SEPARATOR " ,,,,, ") as movie_name'
             ),
             'joins' => array(
                 array(
@@ -272,6 +282,14 @@ class SchedulesController extends MovieAppController {
                         'Schedule.id = ScheduleDetail.schedule_id',
                     ),
                 ),
+                array(
+                    'alias' => 'MovieLanguage',
+                    'table' => Environment::read('table_prefix') . 'movie_languages',
+                    'type' => 'left',
+                    'conditions' => array(
+                        'MovieLanguage.movie_id = Movie.id',
+                    ),
+                ),
             ),
             'conditions' => array(
                 'ScheduleDetail.schedule_id > 0',
@@ -305,9 +323,9 @@ class SchedulesController extends MovieAppController {
         $halls = $objHall->find('list', array(
             'fields' => array('id', 'code'),
         ));
-
+        $lang18 = $this->lang18;
         $this->set('dbdatas', $this->paginate());
-        $this->set(compact('model', 'data_search', 'movies', 'halls'));
+        $this->set(compact('model', 'data_search', 'movies', 'halls' ,'lang18'));
     }
 
 	public function admin_add() {

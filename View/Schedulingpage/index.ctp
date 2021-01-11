@@ -24,7 +24,10 @@
             </div>
         </div>
     </div>
-    <div class="div-title-page title ultra-big"><?= $schedule['Movie']['name'] ?></div>
+    <div class="div-title-page title ultra-big">
+        <?= $schedule['Movie']['name'] ?></br>
+        <?= $schedule['Movie']['name_zho'] ?>
+    </div>
     <div class="div-option-time">
         <div class="div-schedule-container">
             <?php 

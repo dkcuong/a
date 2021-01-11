@@ -15,6 +15,9 @@ msgstr ""
 msgid "item_title"
 msgstr "Movie"
 
+msgid "item_title_chinese"
+msgstr "Movie Chinese Name"
+
 msgid "slug"
 msgstr "Slug"
 

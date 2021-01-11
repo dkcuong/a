@@ -1707,4 +1707,38 @@ class Movie extends MovieAppModel {
 
         return $result;
     }
+
+
+    public function get_movie_name($list_id) {
+        $objMovieLanguage = ClassRegistry::init('Movie.MovieLanguage');
+        $option = array(
+            'fields' => array(
+                'id',
+            ),
+            'joins' => array(
+
+            ),
+            'contain' => array(
+                'MovieLanguage' => array(
+                    'fields' => array (
+                        'name',
+                        'language'
+                    )
+                )
+            ),
+            'conditions' => array(
+                'Movie.id' => $list_id
+            ),
+        );
+        $result = $this->find('all', $option);
+
+        $result_format = array();
+
+        foreach ($result as $k => $v) {
+            foreach ($v['MovieLanguage'] as $i => $j) {
+                $result_format[$v['Movie']['id']][$j['language']]['name'] = $j['name'];
+            }
+        }
+        return $result_format;
+    }
 }

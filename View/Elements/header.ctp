@@ -23,6 +23,9 @@
             <a href="<?= Router::url(array( 'controller' => 'transactionpage', 'action' => 'index')) ?>">
                 <div>Transactions</div>
             </a>
+            <a href="<?= Router::url(array( 'controller' => 'todaysalespage', 'action' => 'index')) ?>">
+                <div>Today Sales</div>
+            </a>
             <a href="<?= Router::url(array( 'controller' => 'changepasswordpage', 'action' => 'index')) ?>">
                 <div>Change Password</div>
             </a>

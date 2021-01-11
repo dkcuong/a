@@ -1366,6 +1366,7 @@
                 // Use strtotime function
                 $Variable1 = strtotime($begining_of_month);
                 $Variable2 = strtotime($now);
+                $Variable2 = strtotime(' +1 day', strtotime($now));
 
                 // Use for loop to store dates into array
                 // 86400 sec = 24 hrs = 60*60*24 = 1 day
@@ -1610,6 +1611,7 @@
 
                 //format header + data
                 $sheet->getStyle("A1:" . $column . $row)->applyFromArray($border_style);
+                $sheet->getStyle("B5:B" . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
 
 
 
@@ -1699,8 +1701,9 @@
                 $temp_row[] = 'Staff';
                 $temp_row[] = 'Payment Method';
                 $temp_row[] = 'Sum of Total Amount';
+                $temp_row[] = 'Discount';
                 $temp_row[] = 'Sum of Ticket Total';
-                $temp_row[] = 'Correct Amount';
+                $temp_row[] = 'Amount to Production';
                 $list_row[] = $temp_row;
                 $this->PhpExcel->addTableRow($temp_row);
 
@@ -1753,6 +1756,7 @@
                                     }
                                     $temp_row[] = $vCombinationMethod['combination_payment_method_display'];
                                     $temp_row[] = $vCombinationMethod['total_sale'];
+                                    $temp_row[] = $vCombinationMethod['discount_amount'];
                                     $temp_row[] = $vCombinationMethod['total_ticket'];
                                     $temp_row[] = $vCombinationMethod['total_sale_custom'];
 
@@ -1783,6 +1787,7 @@
                     $temp_row[] = '';
                     $temp_row[] = '';
                     $temp_row[] = $data_total[$k]['total_sale'];
+                    $temp_row[] = $data_total[$k]['total_discount_amount'];
                     $temp_row[] = $data_total[$k]['total_ticket'];
                     $temp_row[] = $data_total[$k]['total_sale_custom'];
 
@@ -1803,6 +1808,7 @@
                     // add final row
                     $temp_row = array('Total Amount', '', '' ,'', '');
                     $temp_row[] = $data_total_final['total_sale'];
+                    $temp_row[] = $data_total_final['total_discount_amount'];
                     $temp_row[] = $data_total_final['total_ticket'];
                     $temp_row[] = $data_total_final['total_sale_custom'];
                     $list_row[] = $temp_row;
@@ -1825,7 +1831,10 @@
                     $sheet->getStyle("A1:" . $column . $row)->applyFromArray($border_style);
                     $sheet->getStyle("A1:" . $column . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_TOP);
 
-                    $this->PhpExcel->addTableFooter();
+                    $sheet->getStyle("B6:B" . $row)->applyFromArray($border_style);
+                    $sheet->getStyle("B6:B" . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_LEFT);
+
+                $this->PhpExcel->addTableFooter();
 
                     foreach ($list_row as $k => $v) {
                         //$this->PhpExcel->addTableRow($v);
@@ -1981,7 +1990,7 @@
 
                 //format header + data
                 $sheet->getStyle("A1:" . $column . $row)->applyFromArray($border_style);
-
+                $sheet->getStyle("B5:B" . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                 $this->PhpExcel->addTableFooter();
 
                 foreach ($list_row as $k => $v) {
@@ -2167,7 +2176,7 @@
 
                 //format header + data
                 $sheet->getStyle("A1:" . $column . $row)->applyFromArray($border_style);
-
+                $sheet->getStyle("A6:A" . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_LEFT);
                 $this->PhpExcel->addTableFooter();
                 foreach ($list_row as $k => $v) {
                     //$this->PhpExcel->addTableRow($v);
@@ -2329,9 +2338,38 @@
 
         public function export_excel_report_6 ($now, $data_result, $output_filename, $readable_header, $file_path = '') {
             try {
-                $data = $data_result['result_format'];
-                $data_total = $data_result['result_format_total'];
-                $data_total_final = $data_result['result_format_total_final'];
+//                $data = $data_result['result_format'];
+//                $data_total = $data_result['result_format_total'];
+//                $data_total_final = $data_result['result_format_total_final'];
+
+                $data_order = $data_result['order'];
+                $data_purchase = $data_result['purchase'];
+                $data_member = $data_result['member'];
+
+                $list_payment = array();
+                foreach ($data_order['result_format'] as $k=>$v) {
+                    $list_payment = array_merge($list_payment, array_keys($v));
+                }
+
+                foreach ($data_purchase['result_format'] as $k=>$v) {
+                    $list_payment = array_merge($list_payment, array_keys($v));
+                }
+
+                foreach ($data_member['result_format'] as $k=>$v) {
+                    $list_payment = array_merge($list_payment, array_keys($v));
+                }
+                $list_payment = array_flip(array_flip($list_payment));
+
+                // map key
+                $list_payment_format = array();
+                foreach ($list_payment as $k=>$v) {
+                    $list_payment_format[$v] = $v;
+                    if (trim($v) == 'WECHAT PAY') {
+                        $list_payment_format[$v] = "WECHAT";
+                    }
+                }
+
+                $list_payment_unique = array_unique($list_payment_format);
 
                 // create new empty worksheet and set default font
                 $this->PhpExcel->createWorksheet()->setDefaultFont('Tahoma', 12);
@@ -2351,101 +2389,223 @@
 
                 // Get list movie
                 $list_row = array();
-
-
-                $excel_db_header[]['label'] = 'Report';
+                $excel_db_header[]['label'] = 'ACX Day End Report (Harbour North)';
                 // add heading for db fields
                 $this->PhpExcel->addTableHeader($excel_db_header);
+                $fontStyle = array(
+                    'font' => array(
+                        'size' => 23
+                    )
+                );
+
+                $sheet->getStyle("A1:A1")->applyFromArray($fontStyle);
+                $sheet->mergeCells("A1:I1");
+                $sheet->getStyle("A1:A1")->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+
                 $list_row[] = array();
 
 
-                // Row transaction date
-                $temp_row = array();
-                $temp_row[] = 'Transaction Date';
-                $temp_row[] = $now;
-                $list_row[] = $temp_row;
-                $this->PhpExcel->addTableRow($temp_row);
-
-                // Row show date
-                $temp_row = array();
-                $temp_row[] = 'Show Date';
-                $temp_row[] = "(All)";
-                $list_row[] = $temp_row;
-                $this->PhpExcel->addTableRow($temp_row);
-
-                // Row blank
+                // header
                 $temp_row = array('');
-                $list_row[] = $temp_row;
+
+                $temp_row_order = array();
+                foreach ($list_payment_unique as $k=>$v) {
+                    $temp_row_order[] = '';
+                }
+                $temp_row_order[0] = 'BOX OFFICE';
+                $temp_row_member = $temp_row_order;
+                $temp_row_member[0] = 'MEMBER INCOME';
+
+                $temp_row_purchase = $temp_row_order;
+                $temp_row_purchase[0] = 'Tuck Shop';
+
+                $temp_row_house_booking = array('House Booking/Additional Charge');
+
+                $temp_row_total = $temp_row_order;
+                $temp_row_total[] = '';
+                $temp_row_total[0] = 'Total Income';
+
+                $temp_row_note = array('Notes', '');
+
+                $temp_row = array_merge($temp_row,
+                    $temp_row_order,
+                    $temp_row_member,
+                    $temp_row_purchase,
+                    $temp_row_house_booking,
+                    $temp_row_total,
+                    $temp_row_note
+                );
+
                 $this->PhpExcel->addTableRow($temp_row);
 
-                // Row Data
-                $temp_row = array('', '', 'Data');
-                $this->PhpExcel->addTableRow($temp_row);
+                $index_end_box_shop = count($temp_row_order);
+                $index_end_tuck_shop = $index_end_box_shop + count($temp_row_purchase);
+                $index_end_member_income = $index_end_tuck_shop + count($temp_row_member);
+                $index_end_house_booking = $index_end_member_income + 1;
+                $index_end_total_income = $index_end_house_booking + count($temp_row_total);
 
+
+                $sheet->mergeCells('B2' . ':' . $this->getCellID($index_end_box_shop) . "2");
+                $sheet->getStyle('B2' . ':' . $this->getCellID($index_end_box_shop) . "3")->applyFromArray(
+                    array(
+                        'fill' => array(
+                            'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                            'color' => array('rgb' => 'E2EFDA')
+                        )
+                    )
+                );
+                $sheet->mergeCells($this->getCellID($index_end_box_shop + 1) . "2" . ':' . $this->getCellID($index_end_tuck_shop) . "2");
+                $sheet->getStyle($this->getCellID($index_end_box_shop + 1) . "2" . ':' . $this->getCellID($index_end_tuck_shop) . "3")->applyFromArray(
+                    array(
+                        'fill' => array(
+                            'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                            'color' => array('rgb' => 'FCE4D6')
+                        )
+                    )
+                );
+                $sheet->mergeCells($this->getCellID($index_end_tuck_shop + 1) . "2" . ':' . $this->getCellID($index_end_member_income) . "2");
+                $sheet->getStyle($this->getCellID($index_end_tuck_shop + 1) . "2" . ':' . $this->getCellID($index_end_member_income) . "3")->applyFromArray(
+                    array(
+                        'fill' => array(
+                            'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                            'color' => array('rgb' => 'D9E1F2')
+                        )
+                    )
+                );
+
+                // D9D9D9
+                $sheet->getStyle($this->getCellID($index_end_house_booking) . "2" . ':' . $this->getCellID($index_end_house_booking ) . "3")->applyFromArray(
+                    array(
+                        'fill' => array(
+                            'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                            'color' => array('rgb' => 'D9D9D9')
+                        )
+                    )
+                );
+                $sheet->mergeCells($this->getCellID($index_end_house_booking + 1) . "2" . ':' . $this->getCellID($index_end_total_income ) . "2");
+                $sheet->getStyle($this->getCellID($index_end_house_booking + 1) . "2" . ':' . $this->getCellID($index_end_total_income ) . "3")->applyFromArray(
+                    array(
+                        'fill' => array(
+                            'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                            'color' => array('rgb' => 'FFE699')
+                        )
+                    )
+                );
+                $sheet->getStyle($this->getCellID($index_end_total_income) . "3" . ':' . $this->getCellID($index_end_total_income ) . "3")->applyFromArray(
+                    array(
+                        'fill' => array(
+                            'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                            'color' => array('rgb' => 'F8CBAD')
+                        )
+                    )
+                );
+                $sheet->mergeCells($this->getCellID($index_end_total_income + 1) . "2" . ':' . $this->getCellID($index_end_total_income + 2) . "2");
+                $sheet->getStyle($this->getCellID($index_end_total_income + 1) . "2" . ':' . $this->getCellID($index_end_total_income + 2) . "3")->applyFromArray(
+                    array(
+                        'fill' => array(
+                            'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                            'color' => array('rgb' => 'E2EFDA')
+                        )
+                    )
+                );
                 $list_row[] = $temp_row;
 
-                // Row Title
+
                 $temp_row = array();
-                $temp_row[] = 'Staff';
-                $temp_row[] = 'Payment Method';
-                $temp_row[] = 'Sum of Ticket Total';
-                $temp_row[] = 'Sum of Net Sales';
+                $temp_row[] = "DATE";
+                $temp_row_payment = array_values($list_payment_unique);
+                foreach ($temp_row_payment as $k => $v) {
+                    $temp_row_payment_order[$k] = "Box ". $v;
+                }
+                foreach ($temp_row_payment as $k => $v) {
+                    $temp_row_payment_member[$k] = "Member ". $v;
+                }
+                foreach ($temp_row_payment as $k => $v) {
+                    $temp_row_payment_purchase[$k] = "Tuck ". $v;
+                }
+                foreach ($temp_row_payment as $k => $v) {
+                    $temp_row_payment_total[$k] = "Total ". $v;
+                }
+                $temp_row = array_merge(
+                    $temp_row,
+                    $temp_row_payment_order,
+                    $temp_row_payment_member,
+                    $temp_row_payment_purchase,
+                    array('Addition Charge'),
+                    $temp_row_payment_total,
+                    array('Total Income'),
+                    array('Bank In', 'Coins')
+                );
 
-                $list_row[] = $temp_row;
                 $this->PhpExcel->addTableRow($temp_row);
 
-                 //List Row Data
-                $list_row_temp = array();
-                $index_temp = count($list_row);
-                foreach ($data as $k => $v) {
-                    $from_movie = $index_temp+1;
+                $list_row[] = $temp_row;
+//F8CBAD
+                $str_row = "A1:".$this->getCellID($index_end_total_income + 2)."3";
+                $sheet->getStyle($str_row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                $sheet->getStyle($str_row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+                $sheet->getStyle($str_row)->getFont()->setBold(true);
 
-                    $flag_new_movie = 1;
+                $begining_of_month = date("Y-m-01", strtotime($now));
+                $end_of_month = date("Y-m-t", strtotime($now));
+                // Use strtotime function
+                $Variable1 = strtotime($begining_of_month);
+                $Variable2 = strtotime($end_of_month);
+                $list_day = array();
+                // Use for loop to store dates into array
+                // 86400 sec = 24 hrs = 60*60*24 = 1 day
+                for ($currentDate = $Variable1; $currentDate <= $Variable2;
+                     $currentDate += (86400)) {
 
-                    foreach ($v['list_payment'] as $kPayment => $vPayment) {
-                        $temp_row = array();
-                        if ($flag_new_movie == 1) {
-                            $temp_row[] = $v['staff_name'];
-                            $flag_new_movie = 0;
-                        } else {
-                            $temp_row[] = '';
-                        }
+                    $Store = date('Y-m-d', $currentDate);
+                    $list_day[] = $Store;
+                }
 
-                        $temp_row[] = $vPayment['group_method_name'];
-                        $temp_row[] = $vPayment['total_ticket'];
-                        $temp_row[] = $vPayment['total_sale'];
-                        $list_row_temp[] = $temp_row;
-                        $index_temp++;
-                    }
-                    $to_movie = $index_temp;
-                    $sheet->mergeCells('A' . $from_movie . ':A' . $to_movie);
-                    $sheet->getStyle('A' . $from_movie . ':A' . $to_movie)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_TOP);
+                foreach ($list_day as $k => $v) {
+                    $temp_row_total = array();
+                    $total_item= 0;
 
-                    // add final per each movie
                     $temp_row = array();
-                    $temp_row[] = $v['staff_name'] . ' Total';
+                    $temp_row[] = date('d-M-yy', strtotime($v));
+                    foreach($list_payment_unique as $i=>$j) {
+                        $name_payment = $list_payment_format[$j];
+                        $temp_count_order = isset($data_order['result_format'][$v][$name_payment]) ? $data_order['result_format'][$v][$name_payment]['amount'] : 0;
+                        $temp_row_total[$v][$name_payment]['amount'] = $temp_count_order;
+                        $total_item += $temp_count_order;
+                        $temp_row[] = $temp_count_order;
+                    }
+
+                    foreach($list_payment_unique as $i=>$j) {
+                        $name_payment = $list_payment_format[$j];
+                        $temp_count_member = isset($data_member['result_format'][$v][$name_payment]) ? $data_member['result_format'][$v][$name_payment]['amount'] : 0;
+                        $temp_row_total[$v][$name_payment]['amount'] += $temp_count_member;
+                        $total_item += $temp_count_member;
+                        $temp_row[] = $temp_count_member;
+                    }
+
+                    foreach($list_payment_unique as $i=>$j) {
+                        $name_payment = $list_payment_format[$j];
+                        $temp_count_purchase = isset($data_purchase['result_format'][$v][$name_payment]) ? $data_purchase['result_format'][$v][$name_payment]['amount'] : 0;
+                        $temp_row_total[$v][$name_payment]['amount'] += $temp_count_purchase;
+                        $total_item += $temp_count_purchase;
+                        $temp_row[] = $temp_count_purchase;
+                    }
+
                     $temp_row[] = '';
-                    $temp_row[] = $data_total[$k]['total_ticket'];
-                    $temp_row[] = $data_total[$k]['total_sale'];
-                    $list_row_temp[] = $temp_row;
-                    $index_temp++;
-                    $sheet->mergeCells('A' . ($index_temp) . ':B' . ($index_temp));
+
+                    foreach($list_payment_unique as $i=>$j) {
+                        $name_payment = $list_payment_format[$j];
+                        $temp_count_total = isset($temp_row_total[$v][$name_payment]) ? $temp_row_total[$v][$name_payment]['amount'] : 0;
+                        $temp_row[] = $temp_count_total;
+                    }
+
+                    $temp_row[] = $total_item;
+                    $temp_row[] = intdiv($total_item , 10) * 10;
+                    $temp_row[] = $total_item % 10;
+
+                    $this->PhpExcel->addTableRow($temp_row);
+                    $list_row[] = $temp_row;
                 }
-
-                $list_row = array_merge($list_row, $list_row_temp);
-                foreach ($list_row_temp as $k => $v) {
-                    $this->PhpExcel->addTableRow($v);
-                }
-
-                // add final row
-                $temp_row = array('Grand Total', '');
-                $temp_row[] = $data_total_final['total_ticket'];
-                $temp_row[] = $data_total_final['total_sale'];
-                $list_row[] = $temp_row;
-                $this->PhpExcel->addTableRow($temp_row);
-                $temp_index = count($list_row);
-                $sheet->mergeCells('A' . $temp_index . ':B' . $temp_index);
-
 
                 if (!isset($output_filename) || empty($output_filename)) {
                     $output_filename = date('Ymd-Hi') . ".xls";
@@ -2453,7 +2613,7 @@
                     $output_filename = $output_filename . ".xls"; //".xlsx";
                 }
 
-                $column = $this->getCellID(count($list_row[5])-1);
+                $column = $this->getCellID(count($list_row[1])-1);
                 $row = count($list_row);
 
                 //format header + data

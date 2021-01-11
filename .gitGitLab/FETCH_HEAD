@@ -1,4 +1,4 @@
-7ad24b86884538aebe8af5adf7c097dff2c5cd57		branch 'test' of gitlab.com:vtl-solutions/acx-cinema/pos
+e11249b57953faf9992660bf42727076fbd2d283		branch 'develop' of gitlab.com:vtl-solutions/acx-cinema/pos
 1a8eaac2d8437ad67c80b3e454f9e2c04bb7c6ee	not-for-merge	branch 'dashboard-update' of gitlab.com:vtl-solutions/acx-cinema/pos
 e093bc926b3e61359b3f2eeb6ad3216ed6850087	not-for-merge	branch 'dev_kevin' of gitlab.com:vtl-solutions/acx-cinema/pos
 5f1ade2218edb527e67590f33d8974b8bf0150d5	not-for-merge	branch 'dev_kevin_2' of gitlab.com:vtl-solutions/acx-cinema/pos
@@ -9,16 +9,20 @@ dcbd35c597802d78c821d45397f7cb508aab70e1	not-for-merge	branch 'dev_kevin_5' of g
 e4d434b129a83103092035beea55951f0395dcb5	not-for-merge	branch 'dev_kevin_7' of gitlab.com:vtl-solutions/acx-cinema/pos
 a7bfaee17f39eaea5374ac117b231911b9a97d44	not-for-merge	branch 'dev_kevin_8' of gitlab.com:vtl-solutions/acx-cinema/pos
 63d0143dbf7cc7fb856e58674b3e523756e8f740	not-for-merge	branch 'dev_ruslan' of gitlab.com:vtl-solutions/acx-cinema/pos
-d67ad88b09586e543de51fc455d16c6ffcff426e	not-for-merge	branch 'develop' of gitlab.com:vtl-solutions/acx-cinema/pos
 6b6796418845ea255210738569c585edfc66696c	not-for-merge	branch 'fix-get-list-order-by-member' of gitlab.com:vtl-solutions/acx-cinema/pos
 9f08c2db8bb34b0a601b6094edc8d86bc34fae05	not-for-merge	branch 'fix-movie-language' of gitlab.com:vtl-solutions/acx-cinema/pos
 875213255d8a4798548f4680e35c670ab9d7c0b7	not-for-merge	branch 'handle_cancel_renewal' of gitlab.com:vtl-solutions/acx-cinema/pos
 40cb5b600717d76e4a2cbaf3571841162544c868	not-for-merge	branch 'hot-fix-develop' of gitlab.com:vtl-solutions/acx-cinema/pos
 2b9ef76e62c38a53c178d515c29258d05fc11d49	not-for-merge	branch 'hot-fix-develop-2' of gitlab.com:vtl-solutions/acx-cinema/pos
+9b1068c8932a02b421202edda81022056a2a1490	not-for-merge	branch 'item-11-report-today-sale' of gitlab.com:vtl-solutions/acx-cinema/pos
+f9a342cb344b89817983a04a9dd7dbff1a4d4aeb	not-for-merge	branch 'item-12-show-movie-name' of gitlab.com:vtl-solutions/acx-cinema/pos
+2523a73ac0ff3ec36f1f2be3be8ee44ddf38ec6b	not-for-merge	branch 'item-13-change-movie-name-cms' of gitlab.com:vtl-solutions/acx-cinema/pos
+726faf87897bce66abed58207ce8461e30e8026e	not-for-merge	branch 'item-13-change-movie-name-cms-2' of gitlab.com:vtl-solutions/acx-cinema/pos
 103bbdc3ebf22bac4361aed54419f8f5dfa87296	not-for-merge	branch 'master' of gitlab.com:vtl-solutions/acx-cinema/pos
 5319a561fd010e07e8cfb68a814db177f191987f	not-for-merge	branch 'multi_language_movie_info' of gitlab.com:vtl-solutions/acx-cinema/pos
 5bccc3a0de877653ee93474437b40c32549cfff9	not-for-merge	branch 'remove-verification-email' of gitlab.com:vtl-solutions/acx-cinema/pos
-3476c4528773040c83229e34c21058efb57452c4	not-for-merge	branch 'report-cron' of gitlab.com:vtl-solutions/acx-cinema/pos
+1830406a088baab55cd96f3d7b386b4c0a1290ae	not-for-merge	branch 'report-cron' of gitlab.com:vtl-solutions/acx-cinema/pos
 111ee091d2f6c2421d6158c5a203325884aaa973	not-for-merge	branch 'report-daily' of gitlab.com:vtl-solutions/acx-cinema/pos
+7ad24b86884538aebe8af5adf7c097dff2c5cd57	not-for-merge	branch 'test' of gitlab.com:vtl-solutions/acx-cinema/pos
 8e08b4975dea280aaa38a62675be27cc3cb7db80	not-for-merge	branch 'test-mac' of gitlab.com:vtl-solutions/acx-cinema/pos
 d3ae9464ebed4d7f6d9821bf452a42b1dae2d2f8	not-for-merge	branch 'update-display-director' of gitlab.com:vtl-solutions/acx-cinema/pos

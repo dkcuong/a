@@ -82,7 +82,6 @@ class AppController extends Controller {
 
 	public function beforeFilter(){
 
-// set before filter
         $this->layout = "default";
 
 		// all page we don't do anything

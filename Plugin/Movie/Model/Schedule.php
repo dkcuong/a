@@ -233,7 +233,8 @@ class Schedule extends MovieAppModel {
 				'title' => $v['MovieLanguage']['name'],
 				'poster' => $v['Movie']['poster'],
 				'rating' =>$v['Movie']['rating'],
-				'movie_type' =>$v['MovieType']['name']
+				'movie_type' =>$v['MovieType']['name'],
+                'movie_id' => $v['MoviesMovieType']['movie_id']
 			);
 		}
 		

@@ -11,7 +11,10 @@
 
     <div class="div-seatingpage-subsection">
         <div class="div-movie-info">
-            <div class="div-title-page title big"><?= $movie['MovieLanguage']['name'] . ' (' . $movie['MovieType']['name'] . ')' ?></div>
+            <div class="div-title-page title big">
+                <?= $movie['MovieLanguage']['name'] . ' (' . $movie['MovieType']['name'] . ')' ?> </br>
+                <?= $list_name_movie[$movie['Movie']['id']]['zho']['name'] . ' (' . $movie['MovieType']['name'] . ')' ?>
+            </div>
             <div class="div-info-row">
                 <div class="div-info-item first">
                     <div class="div-info-label title smaller light">Date</div>

@@ -20,6 +20,7 @@
 					<thead>
 						<tr>
 							<th class="text-center"><?= $this->Paginator->sort('movie', __d('movie', 'item_title')); ?></th>
+							<th class="text-center"><?= __d('movie', 'item_title_chinese'); ?></th>
 							<th class="text-center"><?= $this->Paginator->sort('movie_type', __d('movie', 'movie_type')); ?></th>
 
 							<th class="text-center"><?= $this->Paginator->sort('hall', __d('place', 'hall_title')); ?></th>
@@ -37,7 +38,22 @@
 						?>
                         <?php foreach ($dbdatas as $dbdata): ?>
 							<tr>
-								<td class="text-center"><?= h($dbdata['Movie']['code']); ?>&nbsp;</td>
+                                <?php
+                                $movie_name = explode(',,,,,', $dbdata[0]['movie_name']);
+                                //echo $movie_name[0] . '<br>' . $movie_name[1]
+                                ?>
+								<td class="text-center"><?php
+                                    if ($lang18 == 'eng') {
+                                        echo $movie_name[0];
+                                    } else if ($lang18 == 'zho') {
+                                        echo $movie_name[1];
+                                    }
+                                    ?>
+                                </td>
+                                <td class="text-center"><?php
+                                    echo $movie_name[1];
+                                    ?>
+                                </td>
 								<td class="text-center"><?= h($dbdata['MovieType']['name']); ?>&nbsp;</td>
 								<td class="text-center"><?= h($dbdata['Hall']['code']); ?>&nbsp;</td>
 								<td class="text-center"><?= h($dbdata['ScheduleDetail']['date']); ?>&nbsp;</td>
